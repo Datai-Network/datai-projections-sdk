@@ -1,0 +1,2 @@
+module.exports = `generated/
+.builds/`
