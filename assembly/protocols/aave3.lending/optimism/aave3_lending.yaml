@@ -1,0 +1,18 @@
+dataSources:
+  - <<: *refLendingPoolAddressProviderRegistry
+    name: LendingPoolAddressesProviderRegistry0
+    network: optimism
+    source:
+      address: '0x770ef9f4fe897e59dacc474ef11238303f9552b6'
+      abi: LendingPoolAddressesProviderRegistry
+      startBlock: 4364783
+templates:
+  - <<: *refLendingPoolAddressProvider
+    name: LendingPoolAddressesProvider
+    network: optimism
+  - <<: *refLendingPool
+    name: LendingPool
+    network: optimism
+  - <<: *refAtoken
+    name: AToken
+    network: optimism

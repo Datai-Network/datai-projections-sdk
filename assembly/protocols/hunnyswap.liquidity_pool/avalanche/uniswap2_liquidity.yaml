@@ -1,0 +1,12 @@
+dataSources:
+  - <<: *refFactorySource
+    name: Factory
+    network: avalanche
+    source:
+      address: '0x0c6A0061F9D0afB30152b8761a273786e51bec6d'
+      abi: Factory
+      startBlock: 15664107
+templates:
+  - <<: *refPairSource
+    name: Pair
+    network: avalanche

@@ -1,0 +1,15 @@
+dataSources:
+  - <<: *refSource
+    name: Staking0
+    network: polygon
+    source:
+      address: '0x4c078868285cf84f5501b64e9008e7da82367115'
+      abi: Staking
+      startBlock: 25450920
+  - <<: *refSource
+    name: Staking1
+    network: polygon
+    source:
+      address: '0x255a4954a3a5f2981694ce7de04effc747e3f8f8'
+      abi: Staking
+      startBlock: 25450764

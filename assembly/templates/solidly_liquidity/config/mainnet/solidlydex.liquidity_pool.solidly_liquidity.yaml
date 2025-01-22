@@ -1,0 +1,6 @@
+
+    config:
+      - &network mainnet
+      - &factoryAddress '0x777de5Fe8117cAAA7B44f396E93a401Cf5c9D4d6'
+      - &startBlock 16303991
+      

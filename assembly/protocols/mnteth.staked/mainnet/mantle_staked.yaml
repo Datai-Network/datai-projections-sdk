@@ -1,0 +1,15 @@
+dataSources:
+  - <<: *refMEth
+    name: mEth
+    network: mainnet
+    source:
+      address: '0xd5F7838F5C461fefF7FE49ea5ebaF7728bB0ADfa'
+      abi: mEth
+      startBlock: 18290587
+  - <<: *refCmEth
+    name: cmEth
+    network: mainnet
+    source:
+      address: '0xe6829d9a7ee3040e1276fa75293bde931859e8fa'
+      abi: mEth
+      startBlock: 20439180

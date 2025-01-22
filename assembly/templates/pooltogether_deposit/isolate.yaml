@@ -1,0 +1,3 @@
+isolate:
+  - &users
+    - '0x96d4d67919e31bd56f3555e85cdf0ef5c5f33645'

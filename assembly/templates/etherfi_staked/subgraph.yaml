@@ -1,0 +1,52 @@
+specVersion: 1.2.0
+schema:
+  file: ./schema.graphql
+refs:
+  - &refEETH
+    kind: ethereum/contract
+    source:
+      abi: EETH
+    mapping:
+      kind: ethereum/events
+      apiVersion: 0.0.7
+      language: wasm/assemblyscript
+      file: ./subgraph/mappings/core.ts
+      entities: []
+      abis:
+        - name: EETH
+          file: ./abis/EETH.json
+      eventHandlers:
+        - event: Transfer(indexed address,indexed address,uint256)
+          handler: handleTransfer
+  - &refWEETH
+    kind: ethereum/contract
+    source:
+      abi: WEETH
+    mapping:
+      kind: ethereum/events
+      apiVersion: 0.0.7
+      language: wasm/assemblyscript
+      file: ./subgraph/mappings/core.ts
+      entities: []
+      abis:
+        - name: WEETH
+          file: ./abis/WEETH.json
+      eventHandlers:
+        - event: Transfer(indexed address,indexed address,uint256)
+          handler: handleTransfer
+  - &refSETHFI
+    kind: ethereum/contract
+    source:
+      abi: SETHFI
+    mapping:
+      kind: ethereum/events
+      apiVersion: 0.0.7
+      language: wasm/assemblyscript
+      file: ./subgraph/mappings/core.ts
+      entities: []
+      abis:
+        - name: SETHFI
+          file: ./abis/SETHFI.json
+      eventHandlers:
+        - event: Transfer(indexed address,indexed address,uint256)
+          handler: handleTransfer

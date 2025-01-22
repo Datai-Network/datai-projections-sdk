@@ -1,0 +1,12 @@
+dataSources:
+  - <<: *refComptrollerSource
+    name: Comptroller
+    network: optimism
+    source:
+      address: '0x60cf091cd3f50420d50fd7f707414d0df4751c58'
+      abi: Comptroller
+      startBlock: 26050083
+templates:
+  - <<: *refCTokenSource
+    name: CToken
+    network: optimism

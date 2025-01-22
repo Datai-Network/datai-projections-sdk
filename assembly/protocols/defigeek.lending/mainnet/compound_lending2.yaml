@@ -1,0 +1,8 @@
+dataSources:
+  - <<: *refSource
+    name: Comet0
+    network: mainnet
+    source:
+      address: '0xaa59f501c92092e624d30cff77eaff5ea4e7bfa2'
+      abi: Comet
+      startBlock: 18434542

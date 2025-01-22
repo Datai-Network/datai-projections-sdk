@@ -1,0 +1,15 @@
+dataSources:
+  - <<: *refSource
+    name: TokenizedVaultYield0
+    network: optimism
+    source:
+      address: '0x4c95761fa7ee62c1023097b531a8b8e14f486956'
+      abi: TokenizedVaultYield
+      startBlock: 119093173
+  - <<: *refSource
+    name: TokenizedVaultYield1
+    network: optimism
+    source:
+      address: '0x4e93cc7b2d4be75b9c3cfbc6436dd4315c46c412'
+      abi: TokenizedVaultYield
+      startBlock: 119093267

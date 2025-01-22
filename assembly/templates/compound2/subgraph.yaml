@@ -1,0 +1,41 @@
+specVersion: 1.2.0
+schema:
+  file: ./schema.graphql
+refs:
+  - &refComptrollerSource
+    kind: ethereum/contract
+    source:
+      abi: Comptroller
+    mapping:
+      kind: ethereum/events
+      apiVersion: 0.0.7
+      language: wasm/assemblyscript
+      file: ./subgraph/mappings/comptroller.ts
+      entities: []
+      abis:
+        - name: Comptroller
+          file: ./abis/Comptroller.json
+        - name: CToken
+          file: ./abis/CToken.json
+      eventHandlers:
+        - event: MarketListed(address)
+          handler: handleMarketListed
+
+  - &refCTokenSource
+    kind: ethereum/contract
+    source:
+      abi: CToken
+    mapping:
+      kind: ethereum/events
+      apiVersion: 0.0.7
+      language: wasm/assemblyscript
+      file: ./subgraph/mappings/ctoken.ts
+      entities: []
+      abis:
+        - name: CToken
+          file: ./abis/CToken.json
+      eventHandlers:
+        - event: Borrow(address,uint256,uint256,uint256)
+          handler: handleBorrow
+        - event: Transfer(indexed address,indexed address,uint256)
+          handler: handleTransfer

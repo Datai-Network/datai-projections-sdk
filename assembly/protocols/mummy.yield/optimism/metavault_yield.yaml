@@ -1,0 +1,29 @@
+dataSources:
+  - <<: *refSource
+    name: Vester0
+    network: optimism
+    source:
+      address: '0x2a3e489f713ab6f652af930555b5bb3422711ac1'
+      abi: Vester
+      startBlock: 78179640
+  - <<: *refSource
+    name: Vester1
+    network: optimism
+    source:
+      address: '0x4f697dedf2b3862ca43493c33589f42cfef66026'
+      abi: Vester
+      startBlock: 107085862
+  - <<: *refSource
+    name: Vester2
+    network: optimism
+    source:
+      address: '0xa25d432ae720e57e85778905935a9a0b9284114a'
+      abi: Vester
+      startBlock: 107134066
+  - <<: *refSource
+    name: Vester3
+    network: optimism
+    source:
+      address: '0xb54abe3fec8e1ae64620185a1e111aa0c3a81542'
+      abi: Vester
+      startBlock: 78179686

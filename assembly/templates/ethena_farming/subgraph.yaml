@@ -1,0 +1,22 @@
+specVersion: 1.2.0
+schema:
+  file: ./schema.graphql
+refs:
+  - &refSource
+    kind: ethereum/contract
+    source:
+      abi: EthenaLPStaking
+    mapping:
+      kind: ethereum/events
+      apiVersion: 0.0.7
+      language: wasm/assemblyscript
+      file: ./subgraph/mappings/core.ts
+      entities: []
+      abis:
+        - name: EthenaLPStaking
+          file: ./abis/EthenaLPStaking.json
+        - name: StakedEna
+          file: ./abis/StakedEna.json
+      eventHandlers:
+        - event: Stake(indexed address,indexed address,uint256)
+          handler: handleStake

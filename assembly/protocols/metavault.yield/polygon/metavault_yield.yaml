@@ -1,0 +1,15 @@
+dataSources:
+  - <<: *refSource
+    name: Vester0
+    network: polygon
+    source:
+      address: '0x505b0ecac7a2709c59df1f7e7b21dbc7fb5f7dc6'
+      abi: Vester
+      startBlock: 29024078
+  - <<: *refSource
+    name: Vester1
+    network: polygon
+    source:
+      address: '0x041d005ef436c41383ad9a36bc86aee6cc526d07'
+      abi: Vester
+      startBlock: 29024081

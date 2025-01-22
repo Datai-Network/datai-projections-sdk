@@ -1,0 +1,36 @@
+dataSources:
+  - <<: *refSource
+    name: TokenizedVaultYield0
+    network: polygon
+    source:
+      address: '0x829363736a5a9080e05549db6d1271f070a7e224'
+      abi: TokenizedVaultYield
+      startBlock: 35808203
+  - <<: *refSource
+    name: TokenizedVaultYield1
+    network: polygon
+    source:
+      address: '0x5cfd50de188a36d2089927c5a14e143dc65af780'
+      abi: TokenizedVaultYield
+      startBlock: 52311372
+  - <<: *refSource
+    name: TokenizedVaultYield2
+    network: polygon
+    source:
+      address: '0xa92b1d196f0df5f17215698f5de99eed26b659bf'
+      abi: TokenizedVaultYield
+      startBlock: 44132001
+  - <<: *refSource
+    name: TokenizedVaultYield3
+    network: polygon
+    source:
+      address: '0x78589e94401647c1b9a807feb7eaa162e9e65bbd'
+      abi: TokenizedVaultYield
+      startBlock: 55707904
+  - <<: *refSource
+    name: TokenizedVaultYield4
+    network: polygon
+    source:
+      address: '0x538eb8ce2530fec34275d475923cada158ac7044'
+      abi: TokenizedVaultYield
+      startBlock: 55225648

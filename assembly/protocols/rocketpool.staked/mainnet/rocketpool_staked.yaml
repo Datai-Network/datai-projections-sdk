@@ -1,0 +1,15 @@
+dataSources:
+  - <<: *refSourceRETH
+    name: RocketpoolRocketTokenRETH
+    network: mainnet
+    source:
+      address: '0xae78736Cd615f374D3085123A210448E74Fc6393'
+      abi: RocketTokenRETH
+      startBlock: 13325300
+  - <<: *refRPL
+    name: RocketNodeStaking
+    network: mainnet
+    source:
+      address: '0xf18dc176c10ff6d8b5a17974126d43301f8eeb95'
+      abi: RocketNodeStaking
+      startBlock: 20946111

@@ -1,0 +1,8 @@
+dataSources:
+  - <<: *refSource
+    name: Vester0
+    network: arbitrum
+    source:
+      address: '0x04f3da526671b596b10ab4a74437d8637d899bf1'
+      abi: Vester
+      startBlock: 170681896

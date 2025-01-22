@@ -1,0 +1,56 @@
+# common entities
+
+type User @entity(immutable: true) {
+  id: ID!
+  positions: [UserPosition!]! @derivedFrom(field: "user")
+}
+
+enum UpdateType {
+  SCHEDULE
+  EVENT
+}
+
+type UpdateTrigger @entity {
+  id: ID!
+  updateType: UpdateType!
+  nonce: Bytes!
+}
+
+type PositionUpdateTrigger @entity {
+  id: ID!
+  user: User!
+  updateTrigger: UpdateTrigger!
+}
+
+interface UserPosition {
+  id: ID!
+  user: User!
+}
+
+# protocol-specific entities
+type AavePoolAddressProvider @entity {
+  id: ID!
+  lendingPool: Bytes
+}
+
+type AavePool @entity(immutable: true) {
+  id: ID!
+}
+
+type AaveUserPosition implements UserPosition @entity(immutable: true) {
+  id: ID!
+  user: User!
+  pool: AavePool!
+  underlyingToken: Bytes!
+  internalToken: Bytes!
+  isBorrow: Boolean!
+}
+
+type AaveReserves @entity(immutable: true) {
+  id: ID!
+  poolId: Bytes!
+  underlying: Bytes!
+  aToken: Bytes!
+  sToken: Bytes!
+  vToken: Bytes!
+}

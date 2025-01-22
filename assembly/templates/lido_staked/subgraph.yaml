@@ -1,0 +1,54 @@
+specVersion: 1.2.0
+schema:
+  file: ./schema.graphql
+refs:
+  - &refStEth
+    kind: ethereum/contract
+    source:
+      abi: Lido
+    mapping:
+      kind: ethereum/events
+      apiVersion: 0.0.7
+      language: wasm/assemblyscript
+      file: ./subgraph/mappings/lido.ts
+      entities: []
+      abis:
+        - name: Lido
+          file: ./abis/Lido.json
+      eventHandlers:
+        - event: Transfer(indexed address,indexed address,uint256)
+          handler: handleTransfer
+        - event: Submitted(indexed address,uint256,address)
+          handler: handleSubmit
+  - &refWStEth
+    kind: ethereum/contract
+    source:
+      abi: WStEth
+    mapping:
+      kind: ethereum/events
+      apiVersion: 0.0.7
+      language: wasm/assemblyscript
+      file: ./subgraph/mappings/wstEth.ts
+      entities: []
+      abis:
+        - name: WStEth
+          file: ./abis/WStEth.json
+      eventHandlers:
+        - event: Transfer(indexed address,indexed address,uint256)
+          handler: handleTransfer
+  - &refStMatic
+    kind: ethereum/contract
+    source:
+      abi: StMatic
+    mapping:
+      kind: ethereum/events
+      apiVersion: 0.0.7
+      language: wasm/assemblyscript
+      file: ./subgraph/mappings/stMatic.ts
+      entities: []
+      abis:
+        - name: StMatic
+          file: ./abis/StMatic.json
+      eventHandlers:
+        - event: Transfer(indexed address,indexed address,uint256)
+          handler: handleTransfer

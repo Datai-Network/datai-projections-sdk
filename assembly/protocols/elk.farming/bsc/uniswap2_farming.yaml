@@ -1,0 +1,134 @@
+dataSources:
+  - <<: *refSource
+    name: Staking0
+    network: bsc
+    source:
+      address: '0xde3f38fd15f566416fe3941b57e1b0a50a9487e1'
+      abi: Staking
+      startBlock: 16834005
+  - <<: *refSource
+    name: Staking1
+    network: bsc
+    source:
+      address: '0x57a1ce7686f3b2ab61f5191c76361f985b57e0fa'
+      abi: Staking
+      startBlock: 16826103
+  - <<: *refSource
+    name: Staking2
+    network: bsc
+    source:
+      address: '0xd7d71e4bc981b50696fa536d330bf745ae563e25'
+      abi: Staking
+      startBlock: 16834010
+  - <<: *refSource
+    name: Staking3
+    network: bsc
+    source:
+      address: '0x4ba6243c9838eb6c50af5260f6fc06a742906c90'
+      abi: Staking
+      startBlock: 12038101
+  - <<: *refSource
+    name: Staking4
+    network: bsc
+    source:
+      address: '0xd5b9b0db5f766b1c934b5d890a2a5a4516a97bc5'
+      abi: Staking
+      startBlock: 11297565
+  - <<: *refSource
+    name: Staking5
+    network: bsc
+    source:
+      address: '0x52bbeba6f7735df6e22dea3a79e8491a9f083eb1'
+      abi: Staking
+      startBlock: 12038110
+  - <<: *refSource
+    name: Staking6
+    network: bsc
+    source:
+      address: '0xeec012bf435987bd370455bb020709493ddb5c59'
+      abi: Staking
+      startBlock: 10834695
+  - <<: *refSource
+    name: Staking7
+    network: bsc
+    source:
+      address: '0xdb59ef120ff1fa5013bb5047e513162003034723'
+      abi: Staking
+      startBlock: 16834015
+  - <<: *refSource
+    name: Staking8
+    network: bsc
+    source:
+      address: '0xd8b57c398db4e7c9f975de12487e905bc54bde74'
+      abi: Staking
+      startBlock: 12038106
+  - <<: *refSource
+    name: Staking9
+    network: bsc
+    source:
+      address: '0xdff6ba42b927055e5f0c92603ddf7c4f6bcf7fbd'
+      abi: Staking
+      startBlock: 12038184
+  - <<: *refSource
+    name: Staking10
+    network: bsc
+    source:
+      address: '0xbfccb252a0229afccb376118a0f5553867b34932'
+      abi: Staking
+      startBlock: 12038136
+  - <<: *refSource
+    name: Staking11
+    network: bsc
+    source:
+      address: '0x380f0dc00a7bb8f22e36769c505d33ca1410f04e'
+      abi: Staking
+      startBlock: 12038116
+  - <<: *refSource
+    name: Staking12
+    network: bsc
+    source:
+      address: '0x20ab0ae3167b3df014a3aa18fbb2d45a4308af50'
+      abi: Staking
+      startBlock: 10834699
+  - <<: *refSource
+    name: Staking13
+    network: bsc
+    source:
+      address: '0x1868b6775ffb685fdfa6826711c0e9266431a084'
+      abi: Staking
+      startBlock: 10834739
+  - <<: *refSource
+    name: Staking14
+    network: bsc
+    source:
+      address: '0x9122431edc9ae8d7b79836f7c77980ab24098349'
+      abi: Staking
+      startBlock: 18062680
+  - <<: *refSource
+    name: Staking15
+    network: bsc
+    source:
+      address: '0x4fc3fb1f61b1953375be44b9922c447c34a677b0'
+      abi: Staking
+      startBlock: 10204507
+  - <<: *refSource
+    name: Staking16
+    network: bsc
+    source:
+      address: '0x8c3483df8fa193a18c0eda71d2f7114381ea28c7'
+      abi: Staking
+      startBlock: 16834020
+  - <<: *refSource
+    name: Staking17
+    network: bsc
+    source:
+      address: '0xb2367854cc9a028bd62d178b15da5a2da770bb6d'
+      abi: Staking
+      startBlock: 10204529
+  - <<: *refSource
+    name: Staking18
+    network: bsc
+    source:
+      address: '0x9c5a7ccaee7015388d8e9663c94d4027f8038cd1'
+      abi: Staking
+      startBlock: 20550092

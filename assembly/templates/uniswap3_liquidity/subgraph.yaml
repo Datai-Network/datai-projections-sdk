@@ -1,0 +1,47 @@
+specVersion: 1.2.0
+schema:
+  file: ./schema.graphql
+refs:
+  - &refFactorySource
+    kind: ethereum/contract
+    source:
+      abi: Factory
+    mapping:
+      kind: ethereum/events
+      apiVersion: 0.0.7
+      language: wasm/assemblyscript
+      file: ./subgraph/mappings/factory.ts
+      entities: []
+      abis:
+        - name: Factory
+          file: ./abis/Factory.json
+        - name: Pool
+          file: ./abis/Pool.json
+        - name: ERC20
+          file: ./abis/ERC20.json
+      eventHandlers:
+        - event: PoolCreated(indexed address,indexed address,indexed uint24,int24,address)
+          handler: handlePoolCreated
+
+  - &refPositionManagerSource
+    kind: ethereum/contract
+    source:
+      abi: PositionManager
+    mapping:
+      kind: ethereum/events
+      apiVersion: 0.0.7
+      language: wasm/assemblyscript
+      file: ./subgraph/mappings/positionManager.ts
+      entities: []
+      abis:
+        - name: PositionManager
+          file: ./abis/PositionManager.json
+        - name: Factory
+          file: ./abis/Factory.json
+        - name: Pool
+          file: ./abis/Pool.json
+      eventHandlers:
+        - event: IncreaseLiquidity(indexed uint256,uint128,uint256,uint256)
+          handler: handleIncreaseLiquidity
+        - event: Transfer(indexed address,indexed address,indexed uint256)
+          handler: handleTransfer

@@ -1,0 +1,15 @@
+dataSources:
+  - <<: *refFactorySource
+    name: Factory
+    network: bsc
+    source:
+      address: '0x571521f8c16f3c4eD5f2490f19187bA7A5A3CBDf'
+      abi: Factory
+      startBlock: 11640600
+  - <<: *refPositionManagerSource
+    name: PositionManager
+    network: bsc
+    source:
+      address: '0x754ca67EFD5951960C43Dd78063277EC50A86628'
+      abi: PositionManager
+      startBlock: 11640667

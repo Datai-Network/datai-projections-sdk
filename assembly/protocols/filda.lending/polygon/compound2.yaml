@@ -1,0 +1,12 @@
+dataSources:
+  - <<: *refComptrollerSource
+    name: Comptroller
+    network: polygon
+    source:
+      address: '0xfbe0f3a3d1405257bd69691406eafa73f5095723'
+      abi: Comptroller
+      startBlock: 21405710
+templates:
+  - <<: *refCTokenSource
+    name: CToken
+    network: polygon

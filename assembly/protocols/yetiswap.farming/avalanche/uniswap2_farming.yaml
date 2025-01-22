@@ -1,0 +1,155 @@
+dataSources:
+  - <<: *refSource
+    name: Staking0
+    network: avalanche
+    source:
+      address: '0xbc86ba14027d4ff47a9fc1ed333c0a9c5635036f'
+      abi: Staking
+      startBlock: 934320
+  - <<: *refSource
+    name: Staking1
+    network: avalanche
+    source:
+      address: '0xa3cb9e0f8e49cb42ae93a3ba9a2db4c337502096'
+      abi: Staking
+      startBlock: 934316
+  - <<: *refSource
+    name: Staking2
+    network: avalanche
+    source:
+      address: '0xfb18a69e234d1742243a5abc7ab242f2a13e8de2'
+      abi: Staking
+      startBlock: 15729226
+  - <<: *refSource
+    name: Staking3
+    network: avalanche
+    source:
+      address: '0xb473afc7bf1d8e842cc53496366a3582455bbd6f'
+      abi: Staking
+      startBlock: 3186950
+  - <<: *refSource
+    name: Staking4
+    network: avalanche
+    source:
+      address: '0xbc0d765d62128b7a8a297c033ea50a7eb03310ae'
+      abi: Staking
+      startBlock: 5423980
+  - <<: *refSource
+    name: Staking5
+    network: avalanche
+    source:
+      address: '0x4f1f67ae72143bcfde4d4953d92ca7eb1ebeecb3'
+      abi: Staking
+      startBlock: 3186954
+  - <<: *refSource
+    name: Staking6
+    network: avalanche
+    source:
+      address: '0xae889e380c48203fa03e83b62902e37f7c9bc3b8'
+      abi: Staking
+      startBlock: 7810099
+  - <<: *refSource
+    name: Staking7
+    network: avalanche
+    source:
+      address: '0x93611d47eaffdbfe56aa5437a00e3d3763153e58'
+      abi: Staking
+      startBlock: 3186958
+  - <<: *refSource
+    name: Staking8
+    network: avalanche
+    source:
+      address: '0x47ed36e9d1fb667d0bd3c4c68f909163cc7589ea'
+      abi: Staking
+      startBlock: 3186956
+  - <<: *refSource
+    name: Staking9
+    network: avalanche
+    source:
+      address: '0x628dc9b674928e1fa9169a330768e12b6e93e3cf'
+      abi: Staking
+      startBlock: 3186989
+  - <<: *refSource
+    name: Staking10
+    network: avalanche
+    source:
+      address: '0x922817aa4b37f75b2670e5fdab14ac6beee3e267'
+      abi: Staking
+      startBlock: 4384287
+  - <<: *refSource
+    name: Staking11
+    network: avalanche
+    source:
+      address: '0x35e9723ccd638ba079567481446bf805c8a62792'
+      abi: Staking
+      startBlock: 3186967
+  - <<: *refSource
+    name: Staking12
+    network: avalanche
+    source:
+      address: '0xdc9842d276f5640ff4a012527ad648c4832ee4ba'
+      abi: Staking
+      startBlock: 3683020
+  - <<: *refSource
+    name: Staking13
+    network: avalanche
+    source:
+      address: '0xab66d8a7dfd21f28028ce1161b930bfbfe2f9676'
+      abi: Staking
+      startBlock: 8185806
+  - <<: *refSource
+    name: Staking14
+    network: avalanche
+    source:
+      address: '0x119dd2568711c595823010ce7d78aa5384e90d51'
+      abi: Staking
+      startBlock: 5423984
+  - <<: *refSource
+    name: Staking15
+    network: avalanche
+    source:
+      address: '0x8cfc6bcba93def81c559ceef3c95e657974d044c'
+      abi: Staking
+      startBlock: 5843096
+  - <<: *refSource
+    name: Staking16
+    network: avalanche
+    source:
+      address: '0xacbb495b4ec7c6d8b71031d37f4eb313ec7c8513'
+      abi: Staking
+      startBlock: 934313
+  - <<: *refSource
+    name: Staking17
+    network: avalanche
+    source:
+      address: '0x46b6a532dd675de63403be551c67173fa6571372'
+      abi: Staking
+      startBlock: 5423986
+  - <<: *refSource
+    name: Staking18
+    network: avalanche
+    source:
+      address: '0xd8cdee869ddb94f2bb5f5124eff6f4b068d8ea85'
+      abi: Staking
+      startBlock: 5628662
+  - <<: *refSource
+    name: Staking19
+    network: avalanche
+    source:
+      address: '0x6fca841f1343406b4bb6e894e3812754235e2777'
+      abi: Staking
+      startBlock: 934325
+  - <<: *refSource
+    name: Staking20
+    network: avalanche
+    source:
+      address: '0xc2a1e92fe0f8a97d600563e376c3c863055dc034'
+      abi: Staking
+      startBlock: 3186972
+  - <<: *refSource
+    name: Staking21
+    network: avalanche
+    source:
+      address: '0x2b5d69ea9c586219e98b4f993488c143c338b271'
+      abi: Staking
+      startBlock: 934322

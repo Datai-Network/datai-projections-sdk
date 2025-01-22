@@ -1,0 +1,29 @@
+dataSources:
+  - <<: *refSource
+    name: Staking0
+    network: mainnet
+    source:
+      address: '0xbc9016c379fb218b95fe3730d5f49f3149e86cab'
+      abi: Staking
+      startBlock: 14121527
+  - <<: *refSource
+    name: Staking1
+    network: mainnet
+    source:
+      address: '0xdb36b23964fab32dca717c99d6aefc9fb5748f3a'
+      abi: Staking
+      startBlock: 14127682
+  - <<: *refSource
+    name: Staking2
+    network: mainnet
+    source:
+      address: '0x9d4af0f08b300437b4f0d97a1c5c478f1e0a7d3c'
+      abi: Staking
+      startBlock: 13778378
+  - <<: *refSource
+    name: Staking3
+    network: mainnet
+    source:
+      address: '0x798fcfc792e7aa09c0e08f3395bda5a75c3295f7'
+      abi: Staking
+      startBlock: 13778347

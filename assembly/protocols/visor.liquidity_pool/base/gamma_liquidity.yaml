@@ -1,0 +1,204 @@
+dataSources:
+  - <<: *refSource
+    name: Hypervisor0
+    network: base
+    source:
+      address: '0xb0fe42a5571d96549e09c84693e567d42cf70fb1'
+      abi: Hypervisor
+      startBlock: 9964489
+  - <<: *refSource
+    name: Hypervisor1
+    network: base
+    source:
+      address: '0x6e9d701fb6478ed5972a37886c2ba6c82a4cbb4c'
+      abi: Hypervisor
+      startBlock: 2800005
+  - <<: *refSource
+    name: Hypervisor2
+    network: base
+    source:
+      address: '0x3164e90764d15141e2689d54e395d9b89fee8924'
+      abi: Hypervisor
+      startBlock: 12391107
+  - <<: *refSource
+    name: Hypervisor3
+    network: base
+    source:
+      address: '0xbcf0f9f3366b430abf70c4017880d0d008501923'
+      abi: Hypervisor
+      startBlock: 12391098
+  - <<: *refSource
+    name: Hypervisor4
+    network: base
+    source:
+      address: '0x550fac19d0ff06725dcaf7721b2c97aba268e11f'
+      abi: Hypervisor
+      startBlock: 12592120
+  - <<: *refSource
+    name: Hypervisor5
+    network: base
+    source:
+      address: '0x11c4011772594c5f124a027da35329559447853d'
+      abi: Hypervisor
+      startBlock: 3835122
+  - <<: *refSource
+    name: Hypervisor6
+    network: base
+    source:
+      address: '0xd252d497288b25646a58b9c7d55df17348ce8b0b'
+      abi: Hypervisor
+      startBlock: 3143231
+  - <<: *refSource
+    name: Hypervisor7
+    network: base
+    source:
+      address: '0xed044cd5654ad208b1bc594fd108c132224e3f3c'
+      abi: Hypervisor
+      startBlock: 7537481
+  - <<: *refSource
+    name: Hypervisor8
+    network: base
+    source:
+      address: '0x89bd0737f2b860535711678259b7fb931f493344'
+      abi: Hypervisor
+      startBlock: 4252120
+  - <<: *refSource
+    name: Hypervisor9
+    network: base
+    source:
+      address: '0x921c7ac35d9a528440b75137066adb1547289555'
+      abi: Hypervisor
+      startBlock: 7537413
+  - <<: *refSource
+    name: Hypervisor10
+    network: base
+    source:
+      address: '0xe503c1dfd7012e72af4c415f4c5e8abf5b45c25f'
+      abi: Hypervisor
+      startBlock: 7578071
+  - <<: *refSource
+    name: Hypervisor11
+    network: base
+    source:
+      address: '0xfd59e64025d8dc9a5e363ec3c88c632d1657755b'
+      abi: Hypervisor
+      startBlock: 7537453
+  - <<: *refSource
+    name: Hypervisor12
+    network: base
+    source:
+      address: '0x7b079aeedcc830c1097cad9475726d67e8e969b2'
+      abi: Hypervisor
+      startBlock: 7578063
+  - <<: *refSource
+    name: Hypervisor13
+    network: base
+    source:
+      address: '0xd3c480ec7a47596ff8d63396227d1f7dc728a7f0'
+      abi: Hypervisor
+      startBlock: 7537462
+  - <<: *refSource
+    name: Hypervisor14
+    network: base
+    source:
+      address: '0x10bf6e7b28b1cffb1c047d7f815953931e5ee947'
+      abi: Hypervisor
+      startBlock: 7537445
+  - <<: *refSource
+    name: Hypervisor15
+    network: base
+    source:
+      address: '0xa05c6bbd24d3e6b89e1b5ebb668bef9ecb92484d'
+      abi: Hypervisor
+      startBlock: 7537344
+  - <<: *refSource
+    name: Hypervisor16
+    network: base
+    source:
+      address: '0xcd5a60eb030300661caf97244ae98e1d5a70f2c8'
+      abi: Hypervisor
+      startBlock: 4252229
+  - <<: *refSource
+    name: Hypervisor17
+    network: base
+    source:
+      address: '0x4476433bc06210ba265d95736ebc630544d397d9'
+      abi: Hypervisor
+      startBlock: 2800057
+  - <<: *refSource
+    name: Hypervisor18
+    network: base
+    source:
+      address: '0xd758d5bdd86844a07b9cfc744a7a915cb4dc4690'
+      abi: Hypervisor
+      startBlock: 12857815
+  - <<: *refSource
+    name: Hypervisor19
+    network: base
+    source:
+      address: '0x099dd23eaab20f5ec43f50055d6e3030c66cc182'
+      abi: Hypervisor
+      startBlock: 4252111
+  - <<: *refSource
+    name: Hypervisor20
+    network: base
+    source:
+      address: '0xc91ed9c205e817b937855853d53d5066996786ab'
+      abi: Hypervisor
+      startBlock: 3835098
+  - <<: *refSource
+    name: Hypervisor21
+    network: base
+    source:
+      address: '0x1c1dbd8ba46a7b78afefa7df37fbb8423990b0cc'
+      abi: Hypervisor
+      startBlock: 3835089
+  - <<: *refSource
+    name: Hypervisor22
+    network: base
+    source:
+      address: '0x2426d31aa68c7478732f1180f87370054b49e81d'
+      abi: Hypervisor
+      startBlock: 12592172
+  - <<: *refSource
+    name: Hypervisor23
+    network: base
+    source:
+      address: '0xbc73a3247eb976a0a29b22f19e4ebafa45efdc65'
+      abi: Hypervisor
+      startBlock: 12592204
+  - <<: *refSource
+    name: Hypervisor24
+    network: base
+    source:
+      address: '0x2ffaced56c4366115b65adbb8703a5541a27973d'
+      abi: Hypervisor
+      startBlock: 3834415
+  - <<: *refSource
+    name: Hypervisor25
+    network: base
+    source:
+      address: '0xa6e2673cd6dad4c9b4eb638ce35cf44e17d32319'
+      abi: Hypervisor
+      startBlock: 3834427
+  - <<: *refSource
+    name: Hypervisor26
+    network: base
+    source:
+      address: '0xeb80824ca1ec2422701f1c32b6787e9ef9b67136'
+      abi: Hypervisor
+      startBlock: 12592195
+  - <<: *refSource
+    name: Hypervisor27
+    network: base
+    source:
+      address: '0x796a7beac44557e30be1578c855f6da1e04cfcec'
+      abi: Hypervisor
+      startBlock: 12592180
+  - <<: *refSource
+    name: Hypervisor28
+    network: base
+    source:
+      address: '0x8089f11dadbabf175aea2415194a6a3a0575539d'
+      abi: Hypervisor
+      startBlock: 12592129

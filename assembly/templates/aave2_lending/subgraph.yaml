@@ -1,0 +1,75 @@
+specVersion: 1.2.0
+schema:
+  file: ./schema.graphql
+refs:
+  - &refLendingPoolAddressProviderRegistry
+    kind: ethereum/contract
+    source:
+      abi: LendingPoolAddressesProviderRegistry
+    mapping:
+      kind: ethereum/events
+      apiVersion: 0.0.7
+      language: wasm/assemblyscript
+      entities: []
+      abis:
+        - name: LendingPoolAddressesProviderRegistry
+          file: ./abis/LendingPoolAddressesProviderRegistry.json
+      eventHandlers:
+        - event: AddressesProviderRegistered(indexed address)
+          handler: handleAddressesProviderRegistered
+      file: ./subgraph/mappings/lendingPoolAddressesProviderRegistry.ts
+
+  - &refLendingPoolAddressProvider
+    kind: ethereum/contract
+    source:
+      abi: LendingPoolAddressesProvider
+    mapping:
+      kind: ethereum/events
+      apiVersion: 0.0.7
+      language: wasm/assemblyscript
+      entities: []
+      abis:
+        - name: LendingPoolAddressesProvider
+          file: ./abis/LendingPoolAddressesProvider.json
+      eventHandlers:
+        - event: ProxyCreated(bytes32,indexed address)
+          handler: handleProxyCreated
+      file: ./subgraph/mappings/lendingPoolAddressProvider.ts
+
+  - &refLendingPool
+    kind: ethereum/contract
+    source:
+      abi: LendingPool
+    mapping:
+      kind: ethereum/events
+      apiVersion: 0.0.7
+      language: wasm/assemblyscript
+      entities: []
+      abis:
+        - name: LendingPool
+          file: ./abis/LendingPool.json
+        - name: IERC20
+          file: ./abis/IERC20.json
+      eventHandlers:
+        - event: Deposit(indexed address,address,indexed address,uint256,indexed uint16)
+          handler: handleDeposit
+        - event: Borrow(indexed address,address,indexed address,uint256,uint256,uint256,indexed uint16)
+          handler: handleBorrow
+      file: ./subgraph/mappings/lendingPool.ts
+
+  - &refAtoken
+    kind: ethereum/contract
+    source:
+      abi: AToken
+    mapping:
+      kind: ethereum/events
+      apiVersion: 0.0.7
+      language: wasm/assemblyscript
+      entities: []
+      abis:
+        - name: AToken
+          file: ./abis/AToken.json
+      eventHandlers:
+        - event: BalanceTransfer(indexed address,indexed address,uint256,uint256)
+          handler: handleATokenTransfer
+      file: ./subgraph/mappings/aToken.ts

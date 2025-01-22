@@ -1,0 +1,8 @@
+dataSources:
+  - <<: *refSource
+    name: Vester0
+    network: base
+    source:
+      address: '0xe776e8f7bfd2e45311ac207a0ec3c8167f870372'
+      abi: Vester
+      startBlock: 3213736

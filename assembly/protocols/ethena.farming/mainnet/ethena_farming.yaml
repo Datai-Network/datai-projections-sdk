@@ -1,0 +1,8 @@
+dataSources:
+  - <<: *refSource
+    name: EthenaLPStaking
+    network: mainnet
+    source:
+      address: '0x8707f238936c12c309bfc2b9959c35828acfc512'
+      abi: EthenaLPStaking
+      startBlock: 18970882

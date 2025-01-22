@@ -1,0 +1,34 @@
+specVersion: 1.2.0
+schema:
+  file: ./schema.graphql
+refs:
+  - &refSource
+    kind: ethereum/contract
+    source:
+      abi: Staking
+    mapping:
+      kind: ethereum/events
+      apiVersion: 0.0.7
+      language: wasm/assemblyscript
+      file: ./subgraph/mappings/staking.ts
+      entities: []
+      abis:
+        - name: Staking
+          file: ./abis/Staking.json
+        - name: CurveLP
+          file: ./abis/CurveLP.json
+        - name: CurveMetaRegistry
+          file: ./abis/CurveMetaRegistry.json
+        - name: CurveRegistry
+          file: ./abis/CurveRegistry.json
+        - name: CurveRegistryAddressProvider
+          file: ./abis/CurveRegistryAddressProvider.json
+        - name: CurveStableSwap
+          file: ./abis/CurveStableSwap.json
+        - name: TokenizedVaultYield
+          file: ./abis/TokenizedVaultYield.json
+        - name: Pair
+          file: ./abis/UniswapV2Pair.json
+      eventHandlers:
+        - event: Staked(indexed address,uint256)
+          handler: handleStaked

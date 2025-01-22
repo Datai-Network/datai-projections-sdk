@@ -1,0 +1,18 @@
+dataSources:
+  - <<: *refLendingPoolAddressProviderRegistry
+    name: LendingPoolAddressesProviderRegistry
+    network: avalanche
+    source:
+      address: '0xfe1ec0bba48805fa5f34d9d01b8e985e4a9c83f6'
+      abi: LendingPoolAddressesProviderRegistry
+      startBlock: 21474542
+templates:
+  - <<: *refLendingPoolAddressProvider
+    name: LendingPoolAddressesProvider
+    network: avalanche
+  - <<: *refLendingPool
+    name: LendingPool
+    network: avalanche
+  - <<: *refAtoken
+    name: AToken
+    network: avalanche

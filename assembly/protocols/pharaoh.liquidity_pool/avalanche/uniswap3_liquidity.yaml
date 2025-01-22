@@ -1,0 +1,15 @@
+dataSources:
+  - <<: *refFactorySource
+    name: Factory
+    network: avalanche
+    source:
+      address: '0xAAA32926fcE6bE95ea2c51cB4Fcb60836D320C42'
+      abi: Factory
+      startBlock: 38764597
+  - <<: *refPositionManagerSource
+    name: PositionManager
+    network: avalanche
+    source:
+      address: '0xAAA78E8C4241990B4ce159E105dA08129345946A'
+      abi: PositionManager
+      startBlock: 38764597

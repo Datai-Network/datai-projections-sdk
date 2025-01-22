@@ -1,0 +1,29 @@
+dataSources:
+  - <<: *refSource
+    name: Comet0
+    network: base
+    source:
+      address: '0x9c4ec768c28520b50860ea7a15bd7213a9ff58bf'
+      abi: Comet
+      startBlock: 2197588
+  - <<: *refSource
+    name: Comet1
+    network: base
+    source:
+      address: '0xb125e6687d4313864e53df431d5425969c15eb2f'
+      abi: Comet
+      startBlock: 11699480
+  - <<: *refSource
+    name: Comet2
+    network: base
+    source:
+      address: '0x46e6b214b524310239732d51387075e0e70970bf'
+      abi: Comet
+      startBlock: 2495303
+  - <<: *refSource
+    name: Comet3
+    network: base
+    source:
+      address: '0x784efeB622244d2348d4F2522f8860B96fbEcE89'
+      abi: Comet
+      startBlock: 20852405

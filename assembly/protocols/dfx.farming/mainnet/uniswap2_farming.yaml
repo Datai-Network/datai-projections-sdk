@@ -1,0 +1,57 @@
+dataSources:
+  - <<: *refSource
+    name: Staking0
+    network: mainnet
+    source:
+      address: '0x84bf8151394dcf32146965753b28760550f3d7a8'
+      abi: Staking
+      startBlock: 12459404
+  - <<: *refSource
+    name: Staking1
+    network: mainnet
+    source:
+      address: '0xd52d48db08e8224ef6e2be8f54f3c84e790b1c32'
+      abi: Staking
+      startBlock: 12459420
+  - <<: *refSource
+    name: Staking2
+    network: mainnet
+    source:
+      address: '0xe29b7285c1169a9765e2a9bfe74209077bee55d6'
+      abi: Staking
+      startBlock: 13722678
+  - <<: *refSource
+    name: Staking3
+    network: mainnet
+    source:
+      address: '0xe690e93fd96b2b8d1cdecde5f08422f3dd82e164'
+      abi: Staking
+      startBlock: 12680237
+  - <<: *refSource
+    name: Staking4
+    network: mainnet
+    source:
+      address: '0xddb720069fdfe7be2e2883a1c06be0f353f7c4c8'
+      abi: Staking
+      startBlock: 13282257
+  - <<: *refSource
+    name: Staking5
+    network: mainnet
+    source:
+      address: '0xe06fa52e0d2d58fe192285bfa0507f09cdd9824a'
+      abi: Staking
+      startBlock: 13232886
+  - <<: *refSource
+    name: Staking6
+    network: mainnet
+    source:
+      address: '0x47b16412c0c9e22362c07ccef8879172ddc06f6d'
+      abi: Staking
+      startBlock: 15035369
+  - <<: *refSource
+    name: Staking7
+    network: mainnet
+    source:
+      address: '0x5eaaeff69f2ab64d1cc0244fb31b236ca989544f'
+      abi: Staking
+      startBlock: 12459411

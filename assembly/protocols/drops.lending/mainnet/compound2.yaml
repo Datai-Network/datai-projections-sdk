@@ -1,0 +1,12 @@
+dataSources:
+  - <<: *refComptrollerSource
+    name: Comptroller
+    network: mainnet
+    source:
+      address: '0x79b56cb219901dbf42bb5951a0edf27465f96206'
+      abi: Comptroller
+      startBlock: 12811699
+templates:
+  - <<: *refCTokenSource
+    name: CToken
+    network: mainnet

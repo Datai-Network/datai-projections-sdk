@@ -1,0 +1,60 @@
+# common entities
+
+type User @entity(immutable: true) {
+  id: ID!
+  positions: [UserPosition!]! @derivedFrom(field: "user")
+}
+
+enum UpdateType {
+  SCHEDULE
+  EVENT
+}
+
+type UpdateTrigger @entity {
+  id: ID!
+  updateType: UpdateType!
+  nonce: Bytes!
+}
+
+type PositionUpdateTrigger @entity {
+  id: ID!
+  user: User!
+  updateTrigger: UpdateTrigger!
+}
+
+interface UserPosition {
+  id: ID!
+  user: User!
+}
+
+# protocol-specific entities
+
+type Uniswap3UserPosition implements UserPosition @entity {
+  id: ID!
+  user: User!
+  pool: Uniswap3Pool!
+  tokenId: BigInt!
+  token0: Uniswap3Token!
+  token1: Uniswap3Token!
+  tickLowerPrice: BigDecimal!
+  tickUpperPrice: BigDecimal!
+}
+
+type Uniswap3Contracts @entity(immutable: true) {
+  id: ID!
+  positionManager: Bytes!
+  factory: Bytes!
+}
+
+type Uniswap3Token @entity(immutable: true) {
+  id: ID!
+  decimals: BigInt!
+}
+
+type Uniswap3Pool @entity(immutable: true) {
+  id: ID!
+  poolAddress: Bytes!
+  token0: Uniswap3Token!
+  token1: Uniswap3Token!
+  feeTier: BigInt!
+}

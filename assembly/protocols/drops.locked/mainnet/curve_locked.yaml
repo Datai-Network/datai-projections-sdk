@@ -1,0 +1,8 @@
+dataSources:
+  - <<: *refSource
+    name: VotingEscrow0
+    network: mainnet
+    source:
+      address: '0x5ba476927ec72df1b7717c0cc321797d95cb61b6'
+      abi: VotingEscrow
+      startBlock: 14813296

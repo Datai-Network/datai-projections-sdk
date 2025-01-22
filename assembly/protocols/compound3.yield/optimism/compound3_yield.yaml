@@ -1,0 +1,22 @@
+dataSources:
+  - <<: *refSource
+    name: Comet0
+    network: optimism
+    source:
+      address: '0x2e44e174f7d53f0212823acc11c01a11d58c5bcb'
+      abi: Comet
+      startBlock: 118406276
+  - <<: *refSource
+    name: Comet1
+    network: optimism
+    source:
+      address: '0x995E394b8B2437aC8Ce61Ee0bC610D617962B214'
+      abi: Comet
+      startBlock: 120295564
+  - <<: *refSource
+    name: Comet2
+    network: optimism
+    source:
+      address: '0xE36A30D249f7761327fd973001A32010b521b6Fd'
+      abi: Comet
+      startBlock: 122730232

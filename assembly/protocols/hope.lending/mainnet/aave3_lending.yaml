@@ -1,0 +1,18 @@
+dataSources:
+  - <<: *refLendingPoolAddressProviderRegistry
+    name: LendingPoolAddressesProviderRegistry
+    network: mainnet
+    source:
+      address: '0x71a0289684a6009f2d07636cacfc103e9f514385'
+      abi: LendingPoolAddressesProviderRegistry
+      startBlock: 17861031
+templates:
+  - <<: *refLendingPoolAddressProvider
+    name: LendingPoolAddressesProvider
+    network: mainnet
+  - <<: *refLendingPool
+    name: LendingPool
+    network: mainnet
+  - <<: *refAtoken
+    name: AToken
+    network: mainnet

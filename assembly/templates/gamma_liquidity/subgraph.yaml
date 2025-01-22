@@ -1,0 +1,21 @@
+specVersion: 1.2.0
+schema:
+  file: ./schema.graphql
+refs:
+  - &refSource
+    kind: ethereum/contract
+    source:
+      abi: Hypervisor
+    mapping:
+      kind: ethereum/events
+      apiVersion: 0.0.7
+      language: wasm/assemblyscript
+      file: ./subgraph/mappings/hypervisor.ts
+      entities: []
+      abis:
+        - name: Hypervisor
+          file: ./abis/Hypervisor.json
+      eventHandlers:
+        - event: Deposit(indexed address,indexed address,uint256,uint256,uint256)
+          handler: handleDeposit
+

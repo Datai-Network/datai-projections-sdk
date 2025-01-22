@@ -1,0 +1,12 @@
+dataSources:
+  - <<: *refFactorySource
+    name: VaultFactory
+    network: polygon
+    source:
+      address: '0xb2f44D8545315cDd0bAaB4AC7233218b932a5dA7'
+      abi: VaultFactory
+      startBlock: 44370370
+templates:
+  - <<: *refVaultSource
+    name: Vault
+    network: polygon

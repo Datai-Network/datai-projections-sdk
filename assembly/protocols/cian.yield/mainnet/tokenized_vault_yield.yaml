@@ -1,0 +1,8 @@
+dataSources:
+  - <<: *refSource
+    name: TokenizedVaultYield0
+    network: mainnet
+    source:
+      address: '0xcdd374f491fbf3f4fcf6e9023c99043774005137'
+      abi: TokenizedVaultYield
+      startBlock: 17243590

@@ -1,0 +1,43 @@
+specVersion: 1.2.0
+schema:
+  file: ./schema.graphql
+refs:
+  - &refFactorySource
+    kind: ethereum/contract
+    source:
+      abi: Factory
+    mapping:
+      kind: ethereum/events
+      apiVersion: 0.0.7
+      language: wasm/assemblyscript
+      file: ./subgraph/mappings/factory.ts
+      entities: []
+      abis:
+        - name: Factory
+          file: ./abis/Factory.json
+        - name: Pool
+          file: ./abis/Pool.json
+        - name: Ticket
+          file: ./abis/Ticket.json
+      eventHandlers:
+        - event: ProxyCreated(address)
+          handler: handleProxyCreated
+
+  - &refPoolSource
+    kind: ethereum/contract
+    source:
+      abi: Ticket
+    mapping:
+      kind: ethereum/events
+      apiVersion: 0.0.7
+      language: wasm/assemblyscript
+      file: ./subgraph/mappings/ticket.ts
+      entities: []
+      abis:
+        - name: Ticket
+          file: ./abis/Ticket.json
+        - name: Pool
+          file: ./abis/Pool.json
+      eventHandlers:
+        - event: Transfer(indexed address,indexed address,uint256)
+          handler: handleTransfer

@@ -1,0 +1,12 @@
+dataSources:
+  - <<: *refFactorySource
+    name: Factory
+    network: polygon
+    source:
+      address: '0xd08a60b0a41a1282efcceef13ce187f848549170'
+      abi: Factory
+      startBlock: 16940721
+templates:
+  - <<: *refPoolSource
+    name: Ticket
+    network: polygon

@@ -1,0 +1,12 @@
+dataSources:
+  - <<: *refFactorySource
+    name: Factory
+    network: mainnet
+    source:
+      address: '0xa7d0d3c4f96bb896e0878ef4b83e5ca79700acb9'
+      abi: Factory
+      startBlock: 11429012
+templates:
+  - <<: *refPoolSource
+    name: Ticket
+    network: mainnet

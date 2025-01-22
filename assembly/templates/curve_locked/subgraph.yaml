@@ -1,0 +1,20 @@
+specVersion: 1.2.0
+schema:
+  file: ./schema.graphql
+refs:
+  - &refSource
+    kind: ethereum/contract
+    source:
+      abi: VotingEscrow
+    mapping:
+      kind: ethereum/events
+      apiVersion: 0.0.7
+      language: wasm/assemblyscript
+      file: ./subgraph/mappings/votingEscrow.ts
+      entities: []
+      abis:
+        - name: VotingEscrow
+          file: ./abis/VotingEscrow.json
+      eventHandlers:
+        - event: Deposit(indexed address,uint256,indexed uint256,int128,uint256)
+          handler: handleDeposit

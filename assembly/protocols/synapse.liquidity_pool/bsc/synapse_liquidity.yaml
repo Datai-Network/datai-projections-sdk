@@ -1,0 +1,12 @@
+dataSources:
+  - <<: *refFactorySource
+    name: Factory
+    network: bsc
+    source:
+      address: '0x37f9aE2e0Ea6742b9CAD5AbCfB6bBC3475b3862B'
+      abi: Factory
+      startBlock: 8394415
+templates:
+  - <<: *refPoolSource
+    name: LPToken
+    network: bsc

@@ -1,0 +1,351 @@
+dataSources:
+  - <<: *refSource
+    name: Hypervisor0
+    network: optimism
+    source:
+      address: '0x34d4112d180e9faf06f77c8c550ba20c9f61ae31'
+      abi: Hypervisor
+      startBlock: 79380978
+  - <<: *refSource
+    name: Hypervisor1
+    network: optimism
+    source:
+      address: '0xbcfa4cfa97f74a6abf80b9901569bbc8654f4315'
+      abi: Hypervisor
+      startBlock: 103018917
+  - <<: *refSource
+    name: Hypervisor2
+    network: optimism
+    source:
+      address: '0x1392698b2f2ca87e6329c1ca502c5d4ba938d1b8'
+      abi: Hypervisor
+      startBlock: 88680835
+  - <<: *refSource
+    name: Hypervisor3
+    network: optimism
+    source:
+      address: '0x8480199e5d711399abb4d51bda329e064c89ad77'
+      abi: Hypervisor
+      startBlock: 103017887
+  - <<: *refSource
+    name: Hypervisor4
+    network: optimism
+    source:
+      address: '0xaed05fdd471a4eecee48b34d38c59cc76681a6c8'
+      abi: Hypervisor
+      startBlock: 32036450
+  - <<: *refSource
+    name: Hypervisor5
+    network: optimism
+    source:
+      address: '0x174222f62f71c0b2cdc1e2856c5ba644bf9d8c6f'
+      abi: Hypervisor
+      startBlock: 62587047
+  - <<: *refSource
+    name: Hypervisor6
+    network: optimism
+    source:
+      address: '0x2102bef0d9727ea50ba844e7658e38480961835c'
+      abi: Hypervisor
+      startBlock: 53118130
+  - <<: *refSource
+    name: Hypervisor7
+    network: optimism
+    source:
+      address: '0xee2769169fdfe1ebccf0a4261cbaac2e5050d1d3'
+      abi: Hypervisor
+      startBlock: 118200167
+  - <<: *refSource
+    name: Hypervisor8
+    network: optimism
+    source:
+      address: '0x6461ed3c4e9c7829896df7f2e2af839820c02612'
+      abi: Hypervisor
+      startBlock: 95040184
+  - <<: *refSource
+    name: Hypervisor9
+    network: optimism
+    source:
+      address: '0xaf7ef12d2e456cf38e149fdef5b8c867f6680efb'
+      abi: Hypervisor
+      startBlock: 96164064
+  - <<: *refSource
+    name: Hypervisor10
+    network: optimism
+    source:
+      address: '0x8462e4173d63f8769f94bf7ae5bc1ac7ab5d96e3'
+      abi: Hypervisor
+      startBlock: 88680508
+  - <<: *refSource
+    name: Hypervisor11
+    network: optimism
+    source:
+      address: '0xca8759814695516c34168bbedd86290964d37ada'
+      abi: Hypervisor
+      startBlock: 88680693
+  - <<: *refSource
+    name: Hypervisor12
+    network: optimism
+    source:
+      address: '0xec77724d6ac1b0b8d8871bfca714794bb4a8392c'
+      abi: Hypervisor
+      startBlock: 79376161
+  - <<: *refSource
+    name: Hypervisor13
+    network: optimism
+    source:
+      address: '0x431f6e577a431d9ee87a535fde2db830e352e33c'
+      abi: Hypervisor
+      startBlock: 53159226
+  - <<: *refSource
+    name: Hypervisor14
+    network: optimism
+    source:
+      address: '0x89c981270bb3538feed441921ff608a56f7c4812'
+      abi: Hypervisor
+      startBlock: 79378252
+  - <<: *refSource
+    name: Hypervisor15
+    network: optimism
+    source:
+      address: '0x8ba02c31565aace0328ea90a17fa86d4ba1ec4d8'
+      abi: Hypervisor
+      startBlock: 79376892
+  - <<: *refSource
+    name: Hypervisor16
+    network: optimism
+    source:
+      address: '0x14e42871d90282ec0439f01347178d6331fc1873'
+      abi: Hypervisor
+      startBlock: 32036354
+  - <<: *refSource
+    name: Hypervisor17
+    network: optimism
+    source:
+      address: '0x2bc7243b8b9d50a2acfef05adac78b44e1fa0b47'
+      abi: Hypervisor
+      startBlock: 7244934
+  - <<: *refSource
+    name: Hypervisor18
+    network: optimism
+    source:
+      address: '0x46b4fa8e2e98a3c53fe526a87591d596e1b4d98c'
+      abi: Hypervisor
+      startBlock: 75966428
+  - <<: *refSource
+    name: Hypervisor19
+    network: optimism
+    source:
+      address: '0xc2d11567f0dc97884027c0281d7e746bf0409528'
+      abi: Hypervisor
+      startBlock: 62586384
+  - <<: *refSource
+    name: Hypervisor20
+    network: optimism
+    source:
+      address: '0xed17209ab7f9224e29cc9894fa14a011f37b6115'
+      abi: Hypervisor
+      startBlock: 32036193
+  - <<: *refSource
+    name: Hypervisor21
+    network: optimism
+    source:
+      address: '0x6f670062bca8c759a876841fcf1c4b0147879097'
+      abi: Hypervisor
+      startBlock: 53117399
+  - <<: *refSource
+    name: Hypervisor22
+    network: optimism
+    source:
+      address: '0x4f2b80d797bd1b93903cc84e5992586142c3ecd1'
+      abi: Hypervisor
+      startBlock: 53117780
+  - <<: *refSource
+    name: Hypervisor23
+    network: optimism
+    source:
+      address: '0x8421c6102ee8a147facc01977df3b159f7921d54'
+      abi: Hypervisor
+      startBlock: 88681632
+  - <<: *refSource
+    name: Hypervisor24
+    network: optimism
+    source:
+      address: '0xfabbe6c687ad7a163e61dd1a21f7b23dcf6e20c9'
+      abi: Hypervisor
+      startBlock: 118200149
+  - <<: *refSource
+    name: Hypervisor25
+    network: optimism
+    source:
+      address: '0x4edea8a84c695ab6fcc0a46c1e3a988d34954931'
+      abi: Hypervisor
+      startBlock: 53114964
+  - <<: *refSource
+    name: Hypervisor26
+    network: optimism
+    source:
+      address: '0xfae023f592581915ebeac6eea07714107508b885'
+      abi: Hypervisor
+      startBlock: 7244881
+  - <<: *refSource
+    name: Hypervisor27
+    network: optimism
+    source:
+      address: '0xc151f371a88c57e54af979e2dd8f11264b72ad92'
+      abi: Hypervisor
+      startBlock: 79377900
+  - <<: *refSource
+    name: Hypervisor28
+    network: optimism
+    source:
+      address: '0x65512de8919baf31cc9c8f067cdca308112b9d1f'
+      abi: Hypervisor
+      startBlock: 7244702
+  - <<: *refSource
+    name: Hypervisor29
+    network: optimism
+    source:
+      address: '0xec573f93dd55e2aefd67b1e59ddfa758676b1184'
+      abi: Hypervisor
+      startBlock: 22148321
+  - <<: *refSource
+    name: Hypervisor30
+    network: optimism
+    source:
+      address: '0xb60a9bb5a35387bdb83764cb8c74359d06194533'
+      abi: Hypervisor
+      startBlock: 7244893
+  - <<: *refSource
+    name: Hypervisor31
+    network: optimism
+    source:
+      address: '0x2e5565be8a3ed2222351dc221279317598fa3ffa'
+      abi: Hypervisor
+      startBlock: 7244597
+  - <<: *refSource
+    name: Hypervisor32
+    network: optimism
+    source:
+      address: '0xe256c5da9b75d4272c8fdc9d2818c18843a1b44c'
+      abi: Hypervisor
+      startBlock: 79381222
+  - <<: *refSource
+    name: Hypervisor33
+    network: optimism
+    source:
+      address: '0xe8f20fd90161de1d5b4cf7e2b5d92932ca06d5f4'
+      abi: Hypervisor
+      startBlock: 39407334
+  - <<: *refSource
+    name: Hypervisor34
+    network: optimism
+    source:
+      address: '0x23851bf7d838d50b1b5164b75c79bda3c1bb6fa3'
+      abi: Hypervisor
+      startBlock: 74186778
+  - <<: *refSource
+    name: Hypervisor35
+    network: optimism
+    source:
+      address: '0x0ec4a47065bf52e1874d2491d4deeed3c638c75f'
+      abi: Hypervisor
+      startBlock: 13550592
+  - <<: *refSource
+    name: Hypervisor36
+    network: optimism
+    source:
+      address: '0xd3c480ec7a47596ff8d63396227d1f7dc728a7f0'
+      abi: Hypervisor
+      startBlock: 107914666
+  - <<: *refSource
+    name: Hypervisor37
+    network: optimism
+    source:
+      address: '0xc79265161ee0766802c576cc0154b03cf2cb72ff'
+      abi: Hypervisor
+      startBlock: 53115886
+  - <<: *refSource
+    name: Hypervisor38
+    network: optimism
+    source:
+      address: '0x15acfbc45b3bc39f25b59ac057811bfdc0438f24'
+      abi: Hypervisor
+      startBlock: 118200051
+  - <<: *refSource
+    name: Hypervisor39
+    network: optimism
+    source:
+      address: '0x51b10b4c8224144e31ab7b570ae51359c4fcc3a6'
+      abi: Hypervisor
+      startBlock: 74186558
+  - <<: *refSource
+    name: Hypervisor40
+    network: optimism
+    source:
+      address: '0x66df9d4a1f065106bd1c489b592d50cfebf78160'
+      abi: Hypervisor
+      startBlock: 74187532
+  - <<: *refSource
+    name: Hypervisor41
+    network: optimism
+    source:
+      address: '0x2225d4124d5da09765b768be5334b93844dfd1a0'
+      abi: Hypervisor
+      startBlock: 74186364
+  - <<: *refSource
+    name: Hypervisor42
+    network: optimism
+    source:
+      address: '0x77809245433dc4dd16f59a923b0a4f276b2dd7bf'
+      abi: Hypervisor
+      startBlock: 79379875
+  - <<: *refSource
+    name: Hypervisor43
+    network: optimism
+    source:
+      address: '0xc581e7c92aee3ae52f6bd78437b9430be9fb0c76'
+      abi: Hypervisor
+      startBlock: 74187447
+  - <<: *refSource
+    name: Hypervisor44
+    network: optimism
+    source:
+      address: '0x3fde124dd0863e34f6e8780494a7518dae735de2'
+      abi: Hypervisor
+      startBlock: 12955595
+  - <<: *refSource
+    name: Hypervisor45
+    network: optimism
+    source:
+      address: '0xd210fd73d0a430660d5f78a8a3cb2a63c002faa8'
+      abi: Hypervisor
+      startBlock: 79378437
+  - <<: *refSource
+    name: Hypervisor46
+    network: optimism
+    source:
+      address: '0xa8524abc230725da48e61b677504fb5e8a409e38'
+      abi: Hypervisor
+      startBlock: 66805455
+  - <<: *refSource
+    name: Hypervisor47
+    network: optimism
+    source:
+      address: '0x7b6d30a9e68f9bddffbc586ce19c867c28cc6116'
+      abi: Hypervisor
+      startBlock: 79377722
+  - <<: *refSource
+    name: Hypervisor48
+    network: optimism
+    source:
+      address: '0x0f548d7ad1a0cb30d1872b8c18894484d76e1569'
+      abi: Hypervisor
+      startBlock: 7085119
+  - <<: *refSource
+    name: Hypervisor49
+    network: optimism
+    source:
+      address: '0x66cd859053c458688044d816117d5bdf42a56813'
+      abi: Hypervisor
+      startBlock: 7087995

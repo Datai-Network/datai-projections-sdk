@@ -1,0 +1,162 @@
+dataSources:
+  - <<: *refSource
+    name: TokenizedVaultYield0
+    network: mainnet
+    source:
+      address: '0x630ed8220f9cbc98358a2e2ecb0727d7b9d61397'
+      abi: TokenizedVaultYield
+      startBlock: 18812605
+  - <<: *refSource
+    name: TokenizedVaultYield1
+    network: mainnet
+    source:
+      address: '0xed51799d71acbb44c4c82402635222b2e8f1895b'
+      abi: TokenizedVaultYield
+      startBlock: 18812747
+  - <<: *refSource
+    name: TokenizedVaultYield2
+    network: mainnet
+    source:
+      address: '0xd4f06205c0e56f953070a9f58a488595377ef118'
+      abi: TokenizedVaultYield
+      startBlock: 18946289
+  - <<: *refSource
+    name: TokenizedVaultYield3
+    network: mainnet
+    source:
+      address: '0x8d48b8d948726d4636aa15a9d6124422f461e153'
+      abi: TokenizedVaultYield
+      startBlock: 19422956
+  - <<: *refSource
+    name: TokenizedVaultYield4
+    network: mainnet
+    source:
+      address: '0x6e9e3baf06db9265f81e0d6862039569e73b076e'
+      abi: TokenizedVaultYield
+      startBlock: 19164928
+  - <<: *refSource
+    name: TokenizedVaultYield5
+    network: mainnet
+    source:
+      address: '0x34f0a81703c2ed935a61372188a8f9ff78edf77d'
+      abi: TokenizedVaultYield
+      startBlock: 19712173
+  - <<: *refSource
+    name: TokenizedVaultYield6
+    network: mainnet
+    source:
+      address: '0x10432bc30396e70f792b538d7e810c83dd7bfe71'
+      abi: TokenizedVaultYield
+      startBlock: 19634383
+  - <<: *refSource
+    name: TokenizedVaultYield7
+    network: mainnet
+    source:
+      address: '0xa2a9d2b4905ac2adc00c32aa5489fec7153873b9'
+      abi: TokenizedVaultYield
+      startBlock: 19639754
+  - <<: *refSource
+    name: TokenizedVaultYield8
+    network: mainnet
+    source:
+      address: '0xb3324df28d3cd79d358887131e579e95e0e56fb7'
+      abi: TokenizedVaultYield
+      startBlock: 19177541
+  - <<: *refSource
+    name: TokenizedVaultYield9
+    network: mainnet
+    source:
+      address: '0x94df93123af26de3998032914ba54db1ae5311a2'
+      abi: TokenizedVaultYield
+      startBlock: 19013783
+  - <<: *refSource
+    name: TokenizedVaultYield10
+    network: mainnet
+    source:
+      address: '0x6b419290f77dd9ab881c14427c791184d7ce9736'
+      abi: TokenizedVaultYield
+      startBlock: 18985585
+  - <<: *refSource
+    name: TokenizedVaultYield11
+    network: mainnet
+    source:
+      address: '0x26372904ca7aba32579b2ee4c7d96616eceb8c03'
+      abi: TokenizedVaultYield
+      startBlock: 18963988
+  - <<: *refSource
+    name: TokenizedVaultYield12
+    network: mainnet
+    source:
+      address: '0x63628b4cdaae7c5e3db5c5a57c699bbae77a84b8'
+      abi: TokenizedVaultYield
+      startBlock: 19070704
+  - <<: *refSource
+    name: TokenizedVaultYield13
+    network: mainnet
+    source:
+      address: '0x9a8604f5f72769057181ff95f2a9f40906221cfd'
+      abi: TokenizedVaultYield
+      startBlock: 19064943
+  - <<: *refSource
+    name: TokenizedVaultYield14
+    network: mainnet
+    source:
+      address: '0x1ca1fcf34ba9c6d2e8c6c8ea398b9f562a8a7aba'
+      abi: TokenizedVaultYield
+      startBlock: 18885920
+  - <<: *refSource
+    name: TokenizedVaultYield15
+    network: mainnet
+    source:
+      address: '0x75f327239fa495a553ec562e1e75f8c1ffe63d4f'
+      abi: TokenizedVaultYield
+      startBlock: 19015833
+  - <<: *refSource
+    name: TokenizedVaultYield16
+    network: mainnet
+    source:
+      address: '0x36b9bcbcecc87cca372130c331e9905b92c5759a'
+      abi: TokenizedVaultYield
+      startBlock: 18863697
+  - <<: *refSource
+    name: TokenizedVaultYield17
+    network: mainnet
+    source:
+      address: '0x7dd8f274d21bc568db8c1512e28ad7a0bd248319'
+      abi: TokenizedVaultYield
+      startBlock: 18863701
+  - <<: *refSource
+    name: TokenizedVaultYield18
+    network: mainnet
+    source:
+      address: '0x8c71baa29d66e2f09627bafef6f8ba1ef8e3ee10'
+      abi: TokenizedVaultYield
+      startBlock: 18836727
+  - <<: *refSource
+    name: TokenizedVaultYield19
+    network: mainnet
+    source:
+      address: '0x2f49de50405366a794fd00be68fc8f151517d301'
+      abi: TokenizedVaultYield
+      startBlock: 19063965
+  - <<: *refSource
+    name: TokenizedVaultYield20
+    network: mainnet
+    source:
+      address: '0x491caf0cb459c53b815aa759eca290fdf0b62669'
+      abi: TokenizedVaultYield
+      startBlock: 19077742
+  - <<: *refSource
+    name: TokenizedVaultYield21
+    network: mainnet
+    source:
+      address: '0x800187a3c549e323351c1b9cb815c024069bd34a'
+      abi: TokenizedVaultYield
+      startBlock: 19269608
+  - <<: *refSource
+    name: TokenizedVaultYield22
+    network: mainnet
+    source:
+      address: '0x79356bf9d3c97ed10dd6f63f7560fd952b929162'
+      abi: TokenizedVaultYield
+      startBlock: 18812754

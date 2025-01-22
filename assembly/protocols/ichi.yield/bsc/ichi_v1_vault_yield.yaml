@@ -1,0 +1,12 @@
+dataSources:
+  - <<: *refFactorySource
+    name: VaultFactory
+    network: bsc
+    source:
+      address: '0xAc93148e93d1C49D89b1166BFd74942E80F5D501'
+      abi: VaultFactory
+      startBlock: 32489805
+templates:
+  - <<: *refVaultSource
+    name: Vault
+    network: bsc

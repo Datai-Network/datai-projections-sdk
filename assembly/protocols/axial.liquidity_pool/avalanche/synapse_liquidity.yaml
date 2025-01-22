@@ -1,0 +1,12 @@
+dataSources:
+  - <<: *refFactorySource
+    name: Factory
+    network: avalanche
+    source:
+      address: '0xbc37E5Ba5abBa3bB67bB76651E04B7c93477636d'
+      abi: Factory
+      startBlock: 2774023
+templates:
+  - <<: *refPoolSource
+    name: LPToken
+    network: avalanche

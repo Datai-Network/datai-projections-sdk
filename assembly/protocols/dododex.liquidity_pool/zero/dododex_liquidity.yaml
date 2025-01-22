@@ -1,0 +1,12 @@
+dataSources:
+  - <<: *refDspFactorySource
+    name: DspFactory
+    network: zero
+    source:
+      address: '0x3D4c730FD4663f226E60dE899Ffed72a3762AfA7'
+      abi: DspFactory
+      startBlock: 1696
+templates:
+  - <<: *refDspSource
+    name: Dsp
+    network: zero

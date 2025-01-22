@@ -1,0 +1,5 @@
+isolate:
+  - &gauges
+    - '0x97df060b4144cbabe2d90fba40b473eaba92e511'
+  - &users
+    - '0x5c448044b87aeabbb4ed7a8be0f5e5e393c737d0'

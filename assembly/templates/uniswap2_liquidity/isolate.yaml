@@ -1,0 +1,7 @@
+isolate:
+  - &token0
+    - '0x9f8f72aa9304c8b593d555f12ef6589cc3a579a2'
+  - &token1
+    - '0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2'
+  - &users
+    - '0x45ed8d80e34e6173f71bbce30a38864f9df69e3c'

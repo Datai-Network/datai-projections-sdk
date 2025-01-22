@@ -1,0 +1,22 @@
+dataSources:
+  - <<: *refStEth
+    name: Lido
+    network: mainnet
+    source:
+      address: '0xae7ab96520de3a18e5e111b5eaab095312d7fe84'
+      abi: Lido
+      startBlock: 11473216
+  - <<: *refWStEth
+    name: WStEth
+    network: mainnet
+    source:
+      address: '0x7f39c581f595b53c5cb19bd0b3f8da6c935e2ca0'
+      abi: WStEth
+      startBlock: 11888477
+  - <<: *refStMatic
+    name: StMatic
+    network: mainnet
+    source:
+      address: '0x9ee91f9f426fa633d227f7a9b000e28b9dfd8599'
+      abi: StMatic
+      startBlock: 14276886

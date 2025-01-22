@@ -1,0 +1,85 @@
+specVersion: 1.2.0
+schema:
+  file: ./schema.graphql
+refs:
+  - &refLendingPoolAddressProviderRegistry
+    kind: ethereum/contract
+    source:
+      abi: LendingPoolAddressesProviderRegistry
+    mapping:
+      kind: ethereum/events
+      apiVersion: 0.0.7
+      language: wasm/assemblyscript
+      entities: []
+      abis:
+        - name: LendingPoolAddressesProviderRegistry
+          file: ./abis/LendingPoolAddressesProviderRegistry.json
+      eventHandlers:
+        - event: AddressesProviderRegistered(indexed address,indexed uint256)
+          handler: handleAddressesProviderRegistered
+      file: ./subgraph/mappings/lendingPoolAddressesProviderRegistry.ts
+
+  - &refLendingPoolAddressProvider
+    kind: ethereum/contract
+    source:
+      abi: LendingPoolAddressesProvider
+    mapping:
+      kind: ethereum/events
+      apiVersion: 0.0.7
+      language: wasm/assemblyscript
+      entities: []
+      abis:
+        - name: LendingPoolAddressesProvider
+          file: ./abis/LendingPoolAddressesProvider.json
+      eventHandlers:
+        - event: ProxyCreated(indexed bytes32,indexed address,indexed address)
+          handler: handleProxyCreated
+      file: ./subgraph/mappings/lendingPoolAddressProvider.ts
+
+  - &refLendingPool
+    kind: ethereum/contract
+    source:
+      abi: LendingPool
+    mapping:
+      kind: ethereum/events
+      apiVersion: 0.0.7
+      language: wasm/assemblyscript
+      entities: []
+      abis:
+        - name: LendingPool
+          file: ./abis/LendingPool.json
+        - name: UiIncentives
+          file: ./abis/UiIncentives.json
+        - name: IERC20
+          file: ./abis/IERC20.json
+      eventHandlers:
+        - event: Supply(indexed address,address,indexed address,uint256,indexed uint16)
+          handler: handleSupply
+          # topic2:
+          #   - '0x741aa7cfb2c7bf2a1e7d4da2e3df6a56ca4131f3'
+        - event: Borrow(indexed address,address,indexed address,uint256,uint8,uint256,indexed uint16)
+          handler: handleBorrow
+          # topic2:
+          #   - '0x741aa7cfb2c7bf2a1e7d4da2e3df6a56ca4131f3'
+      file: ./subgraph/mappings/lendingPool.ts
+
+  - &refAtoken
+    kind: ethereum/contract
+    source:
+      abi: AToken
+    mapping:
+      kind: ethereum/events
+      apiVersion: 0.0.7
+      language: wasm/assemblyscript
+      entities: []
+      abis:
+        - name: AToken
+          file: ./abis/AToken.json
+        - name: UiIncentives
+          file: ./abis/UiIncentives.json
+      eventHandlers:
+        - event: BalanceTransfer(indexed address,indexed address,uint256,uint256)
+          handler: handleATokenTransfer
+          # topic2:
+          #   - '0x741aa7cfb2c7bf2a1e7d4da2e3df6a56ca4131f3'
+      file: ./subgraph/mappings/aToken.ts

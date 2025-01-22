@@ -1,0 +1,37 @@
+specVersion: 1.2.0
+schema:
+  file: ./schema.graphql
+refs:
+  - &refDspFactorySource
+    kind: ethereum/contract
+    source:
+      abi: DspFactory
+    mapping:
+      kind: ethereum/events
+      apiVersion: 0.0.7
+      language: wasm/assemblyscript
+      file: ./subgraph/mappings/dspFactory.ts
+      entities: []
+      abis:
+        - name: DspFactory
+          file: ./abis/DspFactory.json
+      eventHandlers:
+        - event: NewDSP(address,address,address,address)
+          handler: handleNewDSP
+
+  - &refDspSource
+    kind: ethereum/contract
+    source:
+      abi: Dsp
+    mapping:
+      kind: ethereum/events
+      apiVersion: 0.0.7
+      language: wasm/assemblyscript
+      file: ./subgraph/mappings/dsp.ts
+      entities: []
+      abis:
+        - name: Dsp
+          file: ./abis/Dsp.json
+      eventHandlers:
+        - event: Transfer(indexed address,indexed address,uint256)
+          handler: handleTransfer

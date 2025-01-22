@@ -1,0 +1,20 @@
+specVersion: 1.2.0
+schema:
+  file: ./schema.graphql
+refs:
+  - &refSource
+    kind: ethereum/contract
+    source:
+      abi: Comet
+    mapping:
+      kind: ethereum/events
+      apiVersion: 0.0.7
+      language: wasm/assemblyscript
+      file: ./subgraph/mappings/comet.ts
+      entities: []
+      abis:
+        - name: Comet
+          file: ./abis/Comet.json
+      eventHandlers:
+        - event: Supply(indexed address,indexed address,uint256)
+          handler: handleSupply

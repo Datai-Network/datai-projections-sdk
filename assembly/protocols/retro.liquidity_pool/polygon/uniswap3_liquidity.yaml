@@ -1,0 +1,15 @@
+dataSources:
+  - <<: *refFactorySource
+    name: Factory
+    network: polygon
+    source:
+      address: '0x91e1B99072f238352f59e58de875691e20Dc19c1'
+      abi: Factory
+      startBlock: 43939793
+  - <<: *refPositionManagerSource
+    name: PositionManager
+    network: polygon
+    source:
+      address: '0x8aAc493fd8C78536eF193882AeffEAA3E0B8b5c5'
+      abi: PositionManager
+      startBlock: 43943528

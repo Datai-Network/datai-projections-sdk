@@ -1,0 +1,8 @@
+dataSources:
+  - <<: *refSource
+    name: Staking0
+    network: bsc
+    source:
+      address: '0x4eccd82879be9c1b1ce874c6e9850561e732c2f8'
+      abi: Staking
+      startBlock: 14764194

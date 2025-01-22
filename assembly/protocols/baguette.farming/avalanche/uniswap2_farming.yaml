@@ -1,0 +1,232 @@
+dataSources:
+  - <<: *refSource
+    name: Staking0
+    network: avalanche
+    source:
+      address: '0x706c57a2755956e3978f6b4986513e78d0a06520'
+      abi: Staking
+      startBlock: 1349225
+  - <<: *refSource
+    name: Staking1
+    network: avalanche
+    source:
+      address: '0x6cbb1696d45e066b4ca79c58690d5b5146be94c5'
+      abi: Staking
+      startBlock: 1344993
+  - <<: *refSource
+    name: Staking2
+    network: avalanche
+    source:
+      address: '0xe958dcc86632d7421a86133026423a232ea2212e'
+      abi: Staking
+      startBlock: 2146016
+  - <<: *refSource
+    name: Staking3
+    network: avalanche
+    source:
+      address: '0xcf09570845adc0df5dcfa5b93882b115ed0da89c'
+      abi: Staking
+      startBlock: 3117287
+  - <<: *refSource
+    name: Staking4
+    network: avalanche
+    source:
+      address: '0x266cb810a383b70bfeca7285e0464746690e849b'
+      abi: Staking
+      startBlock: 1347652
+  - <<: *refSource
+    name: Staking5
+    network: avalanche
+    source:
+      address: '0x3141ae9c20b952917384d7527d136d10ee06b969'
+      abi: Staking
+      startBlock: 5007430
+  - <<: *refSource
+    name: Staking6
+    network: avalanche
+    source:
+      address: '0xdb12cd73c8b547511e0171ea76223df227d27ceb'
+      abi: Staking
+      startBlock: 1368464
+  - <<: *refSource
+    name: Staking7
+    network: avalanche
+    source:
+      address: '0x81a6fedcf8bd3de346b3d368904f536ffa13fdf0'
+      abi: Staking
+      startBlock: 3636382
+  - <<: *refSource
+    name: Staking8
+    network: avalanche
+    source:
+      address: '0x7b68d44fcdef34a57f5c95c4a46c8a2e72fae4e2'
+      abi: Staking
+      startBlock: 1368217
+  - <<: *refSource
+    name: Staking9
+    network: avalanche
+    source:
+      address: '0xfc6b409109e84b681786660405cff09c43fe9b4e'
+      abi: Staking
+      startBlock: 2145875
+  - <<: *refSource
+    name: Staking10
+    network: avalanche
+    source:
+      address: '0x30393161e53b56e51a4f4c72d3c6ae6907f44a2f'
+      abi: Staking
+      startBlock: 1368466
+  - <<: *refSource
+    name: Staking11
+    network: avalanche
+    source:
+      address: '0x6268c39511825d9a3fd4e7de75e8a4c784dca02b'
+      abi: Staking
+      startBlock: 1348867
+  - <<: *refSource
+    name: Staking12
+    network: avalanche
+    source:
+      address: '0x1d96eb4bde096ef3a73583e02b3ffa4c2bb97933'
+      abi: Staking
+      startBlock: 3360310
+  - <<: *refSource
+    name: Staking13
+    network: avalanche
+    source:
+      address: '0x02e6f336aaaf772045c32803fb93d41f08c043e3'
+      abi: Staking
+      startBlock: 5007324
+  - <<: *refSource
+    name: Staking14
+    network: avalanche
+    source:
+      address: '0x4aafe44a0cdec72be791271013cee8af3f8c5753'
+      abi: Staking
+      startBlock: 3636390
+  - <<: *refSource
+    name: Staking15
+    network: avalanche
+    source:
+      address: '0x3963b5b570f9eae630d645c109d3bdec299cbbee'
+      abi: Staking
+      startBlock: 2145870
+  - <<: *refSource
+    name: Staking16
+    network: avalanche
+    source:
+      address: '0x507b2f7435e8ff982a17ced0988832e632c60e7e'
+      abi: Staking
+      startBlock: 1368219
+  - <<: *refSource
+    name: Staking17
+    network: avalanche
+    source:
+      address: '0x336e29bb600a4c25b3b8988d3e8f87be18128235'
+      abi: Staking
+      startBlock: 5007244
+  - <<: *refSource
+    name: Staking18
+    network: avalanche
+    source:
+      address: '0xeb5069ae76f3f07bfebb4497c85efa9740520847'
+      abi: Staking
+      startBlock: 1368462
+  - <<: *refSource
+    name: Staking19
+    network: avalanche
+    source:
+      address: '0x8bcacf09adf3d9404ef34c3324eeec525adb5a65'
+      abi: Staking
+      startBlock: 3636837
+  - <<: *refSource
+    name: Staking20
+    network: avalanche
+    source:
+      address: '0x1c596eaa585263519adc39d3896b6ae35c5830f6'
+      abi: Staking
+      startBlock: 1368226
+  - <<: *refSource
+    name: Staking21
+    network: avalanche
+    source:
+      address: '0x3c8201d13a6c573518574bf9bbd763318664eafa'
+      abi: Staking
+      startBlock: 3636385
+  - <<: *refSource
+    name: Staking22
+    network: avalanche
+    source:
+      address: '0xc69c44f0fdb348f417dd0c7de33a0a86bb410b84'
+      abi: Staking
+      startBlock: 5007316
+  - <<: *refSource
+    name: Staking23
+    network: avalanche
+    source:
+      address: '0x12bca09acbee692fdd8473e68cf0ecd83570b111'
+      abi: Staking
+      startBlock: 3636839
+  - <<: *refSource
+    name: Staking24
+    network: avalanche
+    source:
+      address: '0x8fab6f3c7fbca7b9aacb56bb4f17bc73c31e3f50'
+      abi: Staking
+      startBlock: 3636387
+  - <<: *refSource
+    name: Staking25
+    network: avalanche
+    source:
+      address: '0x5053494d1efa7514c1d72cca8d8dca40d8119fcc'
+      abi: Staking
+      startBlock: 2657620
+  - <<: *refSource
+    name: Staking26
+    network: avalanche
+    source:
+      address: '0xf125771f27b5a639c08e3086872085f8270c3ffb'
+      abi: Staking
+      startBlock: 1368470
+  - <<: *refSource
+    name: Staking27
+    network: avalanche
+    source:
+      address: '0x03800269e547f683a2f34c7426782eef7e1e5440'
+      abi: Staking
+      startBlock: 1368468
+  - <<: *refSource
+    name: Staking28
+    network: avalanche
+    source:
+      address: '0xf74c010cb319fda048006742ae2bdcca71beccba'
+      abi: Staking
+      startBlock: 2145872
+  - <<: *refSource
+    name: Staking29
+    network: avalanche
+    source:
+      address: '0x2bce0cab94770d0f2eae3e8a582adc3eaa0bd81f'
+      abi: Staking
+      startBlock: 1345260
+  - <<: *refSource
+    name: Staking30
+    network: avalanche
+    source:
+      address: '0x57330912470d987bb81668ee4131ff314d6f6729'
+      abi: Staking
+      startBlock: 5007245
+  - <<: *refSource
+    name: Staking31
+    network: avalanche
+    source:
+      address: '0xe6d84ee5eb3a5d9581a537691d25ef6efec1198c'
+      abi: Staking
+      startBlock: 5007315
+  - <<: *refSource
+    name: Staking32
+    network: avalanche
+    source:
+      address: '0xff49e5d1e6e6827d66ef83dce9de33b415e9bb06'
+      abi: Staking
+      startBlock: 5007248

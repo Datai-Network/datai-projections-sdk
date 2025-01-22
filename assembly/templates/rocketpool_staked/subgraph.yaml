@@ -1,0 +1,38 @@
+specVersion: 1.2.0
+schema:
+  file: ./schema.graphql
+refs:
+  - &refSourceRETH
+    kind: ethereum/contract
+    source:
+      abi: RocketTokenRETH
+    mapping:
+      kind: ethereum/events
+      apiVersion: 0.0.7
+      language: wasm/assemblyscript
+      entities: []
+      abis:
+        - name: RocketTokenRETH
+          file: ./abis/RocketTokenRETH.json
+      eventHandlers:
+        - event: Transfer(indexed address,indexed address,uint256)
+          handler: handleTransfer
+      file: ./subgraph/mappings/rocketTokenRETH.ts
+  - &refRPL
+    kind: ethereum/contract
+    source:
+      abi: RocketNodeStaking
+    mapping:
+      kind: ethereum/events
+      apiVersion: 0.0.7
+      language: wasm/assemblyscript
+      entities: []
+      abis:
+        - name: RocketNodeStaking
+          file: ./abis/RocketNodeStaking.json
+      eventHandlers:
+        - event: RPLStaked(indexed address,uint256,uint256)
+          handler: handleStaked
+        - event: RPLTransferred(indexed address,indexed address,uint256,uint256)
+          handler: handleTransferred
+      file: ./subgraph/mappings/rocketNodeStaking.ts

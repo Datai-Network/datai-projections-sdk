@@ -1,0 +1,22 @@
+dataSources:
+  - <<: *refEETH
+    name: EETH
+    network: mainnet
+    source:
+      address: '0x35fa164735182de50811e8e2e824cfb9b6118ac2'
+      abi: EETH
+      startBlock: 17664324
+  - <<: *refWEETH
+    name: WEETH
+    network: mainnet
+    source:
+      address: '0xcd5fe23c85820f7b72d0926fc9b05b43e359b7ee'
+      abi: WEETH
+      startBlock: 17664336
+  - <<: *refSETHFI
+    name: SETHFI
+    network: mainnet
+    source:
+      address: '0x86b5780b606940eb59a062aa85a07959518c0161'
+      abi: SETHFI
+      startBlock: 20265589

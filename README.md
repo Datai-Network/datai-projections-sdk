@@ -1,2 +1,15 @@
-# datai-projections-sdk
-This repo provides tools, examples, and configs for building, testing, and deploying projections on the Datai Projection Network. It helps transform raw on-chain data into structured datasets, making them easily queryable by downstream applications.
+# Build the project
+
+`yarn build uniswap2_liquidity uniswap2 liquidity_pool mainnet`
+
+# Build partly
+
+`yarn build uniswap2_liquidity uniswap2 liquidity_pool mainnet codegen`
+`yarn build uniswap2_liquidity uniswap2 liquidity_pool mainnet graph`
+`yarn build uniswap2_liquidity uniswap2 liquidity_pool mainnet watcher`
+
+# Build and deploy
+
+`yarn deploy uniswap2_liquidity uniswap2 liquidity_pool mainnet` (devcontainer terminal)
+or
+`docker compose run --rm --build projections deploy uniswap2_liquidity uniswap2 liquidity_pool mainnet` in host terminal

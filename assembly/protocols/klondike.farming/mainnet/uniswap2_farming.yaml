@@ -1,0 +1,22 @@
+dataSources:
+  - <<: *refSource
+    name: Staking0
+    network: mainnet
+    source:
+      address: '0x2b01d3e34259d40cf2ff3b34a28d7c80d6319cb0'
+      abi: Staking
+      startBlock: 12088271
+  - <<: *refSource
+    name: Staking1
+    network: mainnet
+    source:
+      address: '0x185bdc02aafbecdc8dc574e8319228b586764415'
+      abi: Staking
+      startBlock: 12088266
+  - <<: *refSource
+    name: Staking2
+    network: mainnet
+    source:
+      address: '0xe301f632e573a3f8bd06fe623e4440560ab08692'
+      abi: Staking
+      startBlock: 12188749

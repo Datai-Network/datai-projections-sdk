@@ -1,0 +1,8 @@
+dataSources:
+  - <<: *refSource
+    name: TokenizedVaultYield0
+    network: polygon
+    source:
+      address: '0x4e36d8006416ea1d939a0eeae73afdaca86bd376'
+      abi: TokenizedVaultYield
+      startBlock: 30133802

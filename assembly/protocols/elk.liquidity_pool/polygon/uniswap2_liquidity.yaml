@@ -1,0 +1,12 @@
+dataSources:
+  - <<: *refFactorySource
+    name: Factory
+    network: polygon
+    source:
+      address: '0xE3BD06c7ac7E1CeB17BdD2E5BA83E40D1515AF2a'
+      abi: Factory
+      startBlock: 13103735
+templates:
+  - <<: *refPairSource
+    name: Pair
+    network: polygon

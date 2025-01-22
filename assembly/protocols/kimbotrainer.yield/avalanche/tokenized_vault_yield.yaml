@@ -1,0 +1,8 @@
+dataSources:
+  - <<: *refSource
+    name: TokenizedVaultYield0
+    network: avalanche
+    source:
+      address: '0x4e6b2a6a282f62d5a1c449c1a52237e913f4590c'
+      abi: TokenizedVaultYield
+      startBlock: 41759097

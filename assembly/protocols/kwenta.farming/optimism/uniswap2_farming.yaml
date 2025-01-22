@@ -1,0 +1,8 @@
+dataSources:
+  - <<: *refSource
+    name: Staking0
+    network: optimism
+    source:
+      address: '0x6077987e8e06c062094c33177eb12c4a65f90b65'
+      abi: Staking
+      startBlock: 39125835

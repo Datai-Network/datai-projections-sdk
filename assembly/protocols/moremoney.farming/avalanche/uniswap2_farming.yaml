@@ -1,0 +1,8 @@
+dataSources:
+  - <<: *refSource
+    name: Staking0
+    network: avalanche
+    source:
+      address: '0x9727d535165e19590013bddea8fd85dd618b9af7'
+      abi: Staking
+      startBlock: 9231859

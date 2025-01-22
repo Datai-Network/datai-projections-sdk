@@ -1,0 +1,155 @@
+dataSources:
+  - <<: *refSource
+    name: Staking0
+    network: polygon
+    source:
+      address: '0x1c678ea856b368cc361a3389734fe451fec8ceea'
+      abi: Staking
+      startBlock: 12609592
+  - <<: *refSource
+    name: Staking1
+    network: polygon
+    source:
+      address: '0xd6161adbf80602f0ecf74f92ce0271556ddbf98b'
+      abi: Staking
+      startBlock: 12609591
+  - <<: *refSource
+    name: Staking2
+    network: polygon
+    source:
+      address: '0x2328c83431a29613b1780706e0af3679e3d04afd'
+      abi: Staking
+      startBlock: 12322212
+  - <<: *refSource
+    name: Staking3
+    network: polygon
+    source:
+      address: '0x449a45a2db94fb4cd14f7af4fd2322649492225a'
+      abi: Staking
+      startBlock: 12609592
+  - <<: *refSource
+    name: Staking4
+    network: polygon
+    source:
+      address: '0x1c30cfe08506ba215c02bc2723c6d310671bab62'
+      abi: Staking
+      startBlock: 12322214
+  - <<: *refSource
+    name: Staking5
+    network: polygon
+    source:
+      address: '0x83bb796fbc69e013726129f768069e456cadea2b'
+      abi: Staking
+      startBlock: 12322213
+  - <<: *refSource
+    name: Staking6
+    network: polygon
+    source:
+      address: '0x2cc6a7a06b32e0796d8f9225e2e33ae51c93d715'
+      abi: Staking
+      startBlock: 12322212
+  - <<: *refSource
+    name: Staking7
+    network: polygon
+    source:
+      address: '0x9512080848be125bd900cbba3b0454742d11fa93'
+      abi: Staking
+      startBlock: 12322215
+  - <<: *refSource
+    name: Staking8
+    network: polygon
+    source:
+      address: '0x52f68a09aee9503367bc0cda0748c4d81807ae9a'
+      abi: Staking
+      startBlock: 12609590
+  - <<: *refSource
+    name: Staking9
+    network: polygon
+    source:
+      address: '0xc363539ce034e61ec6d4d913313aabc628e9a848'
+      abi: Staking
+      startBlock: 13177745
+  - <<: *refSource
+    name: Staking10
+    network: polygon
+    source:
+      address: '0x26ffeb3452a8d5b507cb6dcc4eca05d33d926af7'
+      abi: Staking
+      startBlock: 12609590
+  - <<: *refSource
+    name: Staking11
+    network: polygon
+    source:
+      address: '0x9477d5496ee5f758b26ffab540a0f5cc4c48d157'
+      abi: Staking
+      startBlock: 13177638
+  - <<: *refSource
+    name: Staking12
+    network: polygon
+    source:
+      address: '0x03a2c998a05b544b236fd51a44efe6505eb33a9a'
+      abi: Staking
+      startBlock: 12322212
+  - <<: *refSource
+    name: Staking13
+    network: polygon
+    source:
+      address: '0x67659df49823f026e98afb2e9703c4d616edb168'
+      abi: Staking
+      startBlock: 12609591
+  - <<: *refSource
+    name: Staking14
+    network: polygon
+    source:
+      address: '0xfad897402c0a70440e79a9da6aafb8a19d94d5ea'
+      abi: Staking
+      startBlock: 12322214
+  - <<: *refSource
+    name: Staking15
+    network: polygon
+    source:
+      address: '0x296a8b9f19d8b6282bbc474847d8a005b4ca09e1'
+      abi: Staking
+      startBlock: 13464410
+  - <<: *refSource
+    name: Staking16
+    network: polygon
+    source:
+      address: '0x642a056f790af3eda4f5639adc54083285186d90'
+      abi: Staking
+      startBlock: 12322212
+  - <<: *refSource
+    name: Staking17
+    network: polygon
+    source:
+      address: '0x31a8fce4d069191900e91b4ba4bf3f3e7d1c7338'
+      abi: Staking
+      startBlock: 12322212
+  - <<: *refSource
+    name: Staking18
+    network: polygon
+    source:
+      address: '0x9c9e24c8fe20ec9e3518524818e06504370cd400'
+      abi: Staking
+      startBlock: 13464410
+  - <<: *refSource
+    name: Staking19
+    network: polygon
+    source:
+      address: '0x8e0dc90e432c3f234d24aa2cb47dd31cf2ad8429'
+      abi: Staking
+      startBlock: 12322212
+  - <<: *refSource
+    name: Staking20
+    network: polygon
+    source:
+      address: '0xfb23843d3561a3bc73bb14855286bd4b0b3e15c6'
+      abi: Staking
+      startBlock: 12609592
+  - <<: *refSource
+    name: Staking21
+    network: polygon
+    source:
+      address: '0x19aa3b72ac5423d8e3675372b4c5b89785ed0896'
+      abi: Staking
+      startBlock: 12322214

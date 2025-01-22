@@ -1,0 +1,15 @@
+dataSources:
+  - <<: *refSource
+    name: Comet0
+    network: polygon
+    source:
+      address: '0xf25212e676d1f7f89cd72ffee66158f541246445'
+      abi: Comet
+      startBlock: 39412367
+  - <<: *refSource
+    name: Comet1
+    network: polygon
+    source:
+      address: '0xaeB318360f27748Acb200CE616E389A6C9409a07'
+      abi: Comet
+      startBlock: 58479907

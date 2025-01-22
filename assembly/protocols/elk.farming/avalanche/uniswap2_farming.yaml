@@ -1,0 +1,414 @@
+dataSources:
+  - <<: *refSource
+    name: Staking0
+    network: avalanche
+    source:
+      address: '0xde3f38fd15f566416fe3941b57e1b0a50a9487e1'
+      abi: Staking
+      startBlock: 13252419
+  - <<: *refSource
+    name: Staking1
+    network: avalanche
+    source:
+      address: '0x57a1ce7686f3b2ab61f5191c76361f985b57e0fa'
+      abi: Staking
+      startBlock: 13240038
+  - <<: *refSource
+    name: Staking2
+    network: avalanche
+    source:
+      address: '0xdb59ef120ff1fa5013bb5047e513162003034723'
+      abi: Staking
+      startBlock: 13252433
+  - <<: *refSource
+    name: Staking3
+    network: avalanche
+    source:
+      address: '0x9ec3ca469f415a7e55a21dc662d427d59e8de8f6'
+      abi: Staking
+      startBlock: 6025680
+  - <<: *refSource
+    name: Staking4
+    network: avalanche
+    source:
+      address: '0xb105d4d17a09397960f2678526a4063a64fad9bd'
+      abi: Staking
+      startBlock: 4936689
+  - <<: *refSource
+    name: Staking5
+    network: avalanche
+    source:
+      address: '0x7eb3a69252b5a29d0239b45e088a4baec906a0b1'
+      abi: Staking
+      startBlock: 6865277
+  - <<: *refSource
+    name: Staking6
+    network: avalanche
+    source:
+      address: '0x91dac6ab6e55d3ea926af84c05c3ab123c5d7791'
+      abi: Staking
+      startBlock: 4189737
+  - <<: *refSource
+    name: Staking7
+    network: avalanche
+    source:
+      address: '0xafdb3f79ac7de9d8e95c6e774f222959cc99e889'
+      abi: Staking
+      startBlock: 6025690
+  - <<: *refSource
+    name: Staking8
+    network: avalanche
+    source:
+      address: '0xda9cf7ca08982db05dc04e538a2d9a4ffdee6952'
+      abi: Staking
+      startBlock: 4189668
+  - <<: *refSource
+    name: Staking9
+    network: avalanche
+    source:
+      address: '0xfd4d0c8cbb2d4899f50b3dbddacdbf2f565bd0f2'
+      abi: Staking
+      startBlock: 14613628
+  - <<: *refSource
+    name: Staking10
+    network: avalanche
+    source:
+      address: '0x482dcc1b2477d44af818d7a9b0d1f545356cb58a'
+      abi: Staking
+      startBlock: 6025711
+  - <<: *refSource
+    name: Staking11
+    network: avalanche
+    source:
+      address: '0xa811738e247b27ec3c82873b4273425b5355bd71'
+      abi: Staking
+      startBlock: 2845181
+  - <<: *refSource
+    name: Staking12
+    network: avalanche
+    source:
+      address: '0xd7d71e4bc981b50696fa536d330bf745ae563e25'
+      abi: Staking
+      startBlock: 13252426
+  - <<: *refSource
+    name: Staking13
+    network: avalanche
+    source:
+      address: '0xad7185fe19ef6607ab7631749373a261461adf7c'
+      abi: Staking
+      startBlock: 6025734
+  - <<: *refSource
+    name: Staking14
+    network: avalanche
+    source:
+      address: '0x51e07ff9c0f78f88b3c094a71d338d1681c3ad20'
+      abi: Staking
+      startBlock: 11439636
+  - <<: *refSource
+    name: Staking15
+    network: avalanche
+    source:
+      address: '0x3f069263c05a31c3b8cc3f621cd4baf3c8c9b071'
+      abi: Staking
+      startBlock: 13252451
+  - <<: *refSource
+    name: Staking16
+    network: avalanche
+    source:
+      address: '0xd3641c0ebe0361de44d0298e165943b6b0422d98'
+      abi: Staking
+      startBlock: 6025706
+  - <<: *refSource
+    name: Staking17
+    network: avalanche
+    source:
+      address: '0x76d80ca1fc1dd8355b692f961d198dd7a2858edb'
+      abi: Staking
+      startBlock: 7904564
+  - <<: *refSource
+    name: Staking18
+    network: avalanche
+    source:
+      address: '0xe9e6799cd59c1cea3c4606b83f38621f150c605b'
+      abi: Staking
+      startBlock: 4189672
+  - <<: *refSource
+    name: Staking19
+    network: avalanche
+    source:
+      address: '0xcf025c16c9cd72eebf0513a1ed8f588f99d1bcd9'
+      abi: Staking
+      startBlock: 6025776
+  - <<: *refSource
+    name: Staking20
+    network: avalanche
+    source:
+      address: '0xe935028df3285d1852e11dae384534d27887c196'
+      abi: Staking
+      startBlock: 11438104
+  - <<: *refSource
+    name: Staking21
+    network: avalanche
+    source:
+      address: '0x17c2e0d60b75961729aecc69ccc7e904b9411fa3'
+      abi: Staking
+      startBlock: 9881582
+  - <<: *refSource
+    name: Staking22
+    network: avalanche
+    source:
+      address: '0xc2c8944b0c66eca1b55dc9f9c959c1d6ac77f70e'
+      abi: Staking
+      startBlock: 6025741
+  - <<: *refSource
+    name: Staking23
+    network: avalanche
+    source:
+      address: '0x103024f6f514a229c87583acd12ca51a027d4456'
+      abi: Staking
+      startBlock: 13252488
+  - <<: *refSource
+    name: Staking24
+    network: avalanche
+    source:
+      address: '0xbf770986abf674cf7f94caa4ceb4ed48c2400802'
+      abi: Staking
+      startBlock: 13252495
+  - <<: *refSource
+    name: Staking25
+    network: avalanche
+    source:
+      address: '0x737ffa0fc4dfb6fadbee0d2fd9b7ddab30efb3b9'
+      abi: Staking
+      startBlock: 13252481
+  - <<: *refSource
+    name: Staking26
+    network: avalanche
+    source:
+      address: '0x99e7ef79f166571fb6b5f156c70525f2e7b1f0af'
+      abi: Staking
+      startBlock: 2845196
+  - <<: *refSource
+    name: Staking27
+    network: avalanche
+    source:
+      address: '0xaeb9488d0bd5ad782784b3d873c496d91c883091'
+      abi: Staking
+      startBlock: 13252473
+  - <<: *refSource
+    name: Staking28
+    network: avalanche
+    source:
+      address: '0x9b33a551664458328c3a6e19c5168319fac6a7de'
+      abi: Staking
+      startBlock: 4189693
+  - <<: *refSource
+    name: Staking29
+    network: avalanche
+    source:
+      address: '0x8a1132aa54de8c2810e3d361fe87913a901c33c3'
+      abi: Staking
+      startBlock: 14315963
+  - <<: *refSource
+    name: Staking30
+    network: avalanche
+    source:
+      address: '0x3291e7c26e4d140eeca633d868d77d4851a35f4e'
+      abi: Staking
+      startBlock: 4189855
+  - <<: *refSource
+    name: Staking31
+    network: avalanche
+    source:
+      address: '0x3291e7c26e4d140eeca633d868d77d4851a35f4e'
+      abi: Staking
+      startBlock: 4189855
+  - <<: *refSource
+    name: Staking32
+    network: avalanche
+    source:
+      address: '0x2e9c04ca74bcfc4b7f67579ed4981bb2424073fa'
+      abi: Staking
+      startBlock: 4189815
+  - <<: *refSource
+    name: Staking33
+    network: avalanche
+    source:
+      address: '0x54d434c6688986b24a2d01df8e0c116744fca5f6'
+      abi: Staking
+      startBlock: 6025769
+  - <<: *refSource
+    name: Staking34
+    network: avalanche
+    source:
+      address: '0x08d52263c47ad6b5ae03de52269fcaa5460c4fe1'
+      abi: Staking
+      startBlock: 4189788
+  - <<: *refSource
+    name: Staking35
+    network: avalanche
+    source:
+      address: '0x4280492c441c3ed592a6537bd428fecbe4bc3787'
+      abi: Staking
+      startBlock: 6025833
+  - <<: *refSource
+    name: Staking36
+    network: avalanche
+    source:
+      address: '0x16c430b3ef5b4db173c199b91fcfb983329bbd41'
+      abi: Staking
+      startBlock: 4189819
+  - <<: *refSource
+    name: Staking37
+    network: avalanche
+    source:
+      address: '0x598acf0e3af1b81891403167e9ecd4744a1e6f9f'
+      abi: Staking
+      startBlock: 6025797
+  - <<: *refSource
+    name: Staking38
+    network: avalanche
+    source:
+      address: '0xfbe18a8262f7849659541ffb42bfd91d1fb7179d'
+      abi: Staking
+      startBlock: 13252553
+  - <<: *refSource
+    name: Staking39
+    network: avalanche
+    source:
+      address: '0xdf25d4ee0242bc83d12d93f92d67342a8725b2da'
+      abi: Staking
+      startBlock: 2845192
+  - <<: *refSource
+    name: Staking40
+    network: avalanche
+    source:
+      address: '0x63b7326dfe1f1cbfd736c74f98f95919d2dbea81'
+      abi: Staking
+      startBlock: 14015880
+  - <<: *refSource
+    name: Staking41
+    network: avalanche
+    source:
+      address: '0x8f13649873761a6d57b5b53ece3ebff89d9cd604'
+      abi: Staking
+      startBlock: 13252539
+  - <<: *refSource
+    name: Staking42
+    network: avalanche
+    source:
+      address: '0xf45c092db852534947cbdd8382f189201a0baa27'
+      abi: Staking
+      startBlock: 4189871
+  - <<: *refSource
+    name: Staking43
+    network: avalanche
+    source:
+      address: '0xa3091f85e7bdf43bb8cb73c7130e4ca2d64a4e64'
+      abi: Staking
+      startBlock: 4189946
+  - <<: *refSource
+    name: Staking44
+    network: avalanche
+    source:
+      address: '0x92bfa7f1a3095de19320e2cfc52ef7787de50461'
+      abi: Staking
+      startBlock: 4189681
+  - <<: *refSource
+    name: Staking45
+    network: avalanche
+    source:
+      address: '0x9c5a7ccaee7015388d8e9663c94d4027f8038cd1'
+      abi: Staking
+      startBlock: 14613698
+  - <<: *refSource
+    name: Staking46
+    network: avalanche
+    source:
+      address: '0x83f1237728ecafd010b1b593b947d2e44a3fac25'
+      abi: Staking
+      startBlock: 7602234
+  - <<: *refSource
+    name: Staking47
+    network: avalanche
+    source:
+      address: '0xa57c3be3c8c8547d89436ad40b94052b6a093733'
+      abi: Staking
+      startBlock: 15088890
+  - <<: *refSource
+    name: Staking48
+    network: avalanche
+    source:
+      address: '0x7b0c437930876a42c91bd5e261066104eaaf8eab'
+      abi: Staking
+      startBlock: 13252546
+  - <<: *refSource
+    name: Staking49
+    network: avalanche
+    source:
+      address: '0xe65d7106fb96112189c7e92e88e38370ca629623'
+      abi: Staking
+      startBlock: 14015799
+  - <<: *refSource
+    name: Staking50
+    network: avalanche
+    source:
+      address: '0x6609b69a3ea9f8239dce55e99ff349517525326d'
+      abi: Staking
+      startBlock: 6025722
+  - <<: *refSource
+    name: Staking51
+    network: avalanche
+    source:
+      address: '0x0b62c16165578386e199cade94c19e50659c9525'
+      abi: Staking
+      startBlock: 14015776
+  - <<: *refSource
+    name: Staking52
+    network: avalanche
+    source:
+      address: '0xd6a14e672b4817955a5764eb95510370cf6121e5'
+      abi: Staking
+      startBlock: 13252502
+  - <<: *refSource
+    name: Staking53
+    network: avalanche
+    source:
+      address: '0x84ecab09c480121cf0b94726d6230901886f97ef'
+      abi: Staking
+      startBlock: 6025789
+  - <<: *refSource
+    name: Staking54
+    network: avalanche
+    source:
+      address: '0xa18881c13ab4af4349cde10ec47537f71ecabc4e'
+      abi: Staking
+      startBlock: 2845190
+  - <<: *refSource
+    name: Staking55
+    network: avalanche
+    source:
+      address: '0xa4f5447ce95fe4cdb7ecd023d6ea0274b85a27ff'
+      abi: Staking
+      startBlock: 6025698
+  - <<: *refSource
+    name: Staking56
+    network: avalanche
+    source:
+      address: '0x13109717a76a16df578ac5b4a06139ff255f3fbd'
+      abi: Staking
+      startBlock: 2845198
+  - <<: *refSource
+    name: Staking57
+    network: avalanche
+    source:
+      address: '0x29c06e6a797fef985290e71a819f49619153e129'
+      abi: Staking
+      startBlock: 6025826
+  - <<: *refSource
+    name: Staking58
+    network: avalanche
+    source:
+      address: '0x1a9292de525231f377b59b982fa1bbe16b83e166'
+      abi: Staking
+      startBlock: 6025819
