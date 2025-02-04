@@ -142,7 +142,7 @@ Join our community to discuss ideas, get help, and share your integrations:
 - **[Website](https://datai.network/)**
 - **[Telegram](http://t.me/Datai_network)**
 - **[Discord Channel](https://discord.gg/CKCgU3MegH)**
-- **[X](https://x.com/datainetwork)**
+- **[X (formerly Twitter)](https://x.com/datainetwork)**
 
 If you encounter any issues or have questions, please open an issue in this repository or reach out via our community channels.
 
