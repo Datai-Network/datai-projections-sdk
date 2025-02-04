@@ -1,11 +1,11 @@
 # Datai Projections SDK
 
-> Easily integrate with the Datai decentralized data network
+> Easily integrate with the Datai decentralized data network and get rewarded
 
 ![Build Status](https://openaccessbucket.s3.us-east-1.amazonaws.com/datai-logo_sm.png)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
-The **Datai Projections SDK** empowers developers to rapidly build, manage, and integrate projections—specialized data integration modules—into the Datai decentralized data network. Whether you're enhancing network capabilities or building custom functionalities, this SDK provides the tools you need to get started quickly.
+The **Datai Projections SDK** empowers developers to rapidly build, manage, and integrate projections—specialized data integration modules—into the Datai decentralized data network. This SDK provides the tools you need to get started quickly.
 
 ---
 
@@ -13,11 +13,12 @@ The **Datai Projections SDK** empowers developers to rapidly build, manage, and 
 
 - [Introduction](#introduction)
 - [What is a Projection?](#what-is-a-projection)
+- [Why should you implement a Projection?](#why-should-you-implement-a-projection)
+- [What are the components of a projection?](#what-are-the-components-of-a-projection)
 - [Getting Started](#getting-started)
   - [Prerequisites](#prerequisites)
   - [Installation](#installation)
-- [Usage](#usage)
-- [API Reference](#api-reference)
+- [Workflow](#workflow)
 - [Contributing](#contributing)
 - [Community and Support](#community-and-support)
 - [License](#license)
@@ -34,13 +35,24 @@ For an in-depth guide on building your first projection, please see our [Develop
 
 ## What is a Projection?
 
-Within the Datai network, a **projection** is a specialized data integration module that:
-
-- **Interacts with decentralized data streams:** Connect and process data from various endpoints.
-- **Scales network capabilities:** Enable advanced data handling and distribution.
-- **Extends functionality:** Allow developers to implement custom logic tailored to their application needs.
+A projection is a bundle of code implemented by a developer who wants to integrate a specific protocol into the Datai Network. The Datai engine compiles these projections and deploys them to IPFS for indexers to run on their nodes.
 
 This modular approach is key to expanding the network’s reach and utility.
+
+---
+
+## Why should you implement a Projection?
+
+The network rewards developers for each projection they have deployed. Not only do developers receive rewards from data consumers, they are also eligible to claim staked grants on the projection.
+
+---
+
+## What are the components of a projection?
+
+A projection has two main components which will contribute to calculate the active positions previously explained:
+
+- **Subgraph** → Indexes relevant events, such as a user staking tokens in a contract. The subgraph stores data about these positions, identifying users with open positions. This helps the next component focus only on these users rather than analyzing the entire user base.
+- **Watcher** → Periodically analyzes positions stored by the subgraph and calculates the active position balances.
 
 ---
 
@@ -50,69 +62,53 @@ Before you begin, make sure you have the following installed:
 
 ### Prerequisites
 
+- [Docker](https://docs.docker.com/get-started/get-docker/)
 - [Node.js (v14+)](https://nodejs.org/)
 - [npm](https://www.npmjs.com/) or [Yarn](https://yarnpkg.com/)
-- Basic knowledge of decentralized systems and API integrations
+- Code editor of your choice. We recommend [Visual Studio Code](https://code.visualstudio.com/)
+- Experience with [The Graph Protocol](https://thegraph.com/docs/en/subgraphs/developing/creating/starting-your-subgraph/) is going to make your life very easy and most of the guide will be very familiar to you. In fact we encourage you to spend some time learning about it.
 
 ### Installation
 
-You can install the SDK via npm or Yarn:
+There is no need to clone the repo from Github. You can simply run the following to get a simpler version for you to start the development.
 
 ```bash
-# Using npm
-npm install datai-projections-sdk
-
-# Using Yarn
-yarn add datai-projections-sdk
+npx create-datai-app
 ```
 
 ---
 
-## Usage
+## Workflow
 
-Below is a simple example demonstrating how to initialize the SDK and create a new projection:
+During the implementation process, you will have to go through the following phases:
 
-```javascript
-// Import the Datai Projections SDK
-const DataiProjections = require('datai-projections-sdk');
+### Commitment
 
-// Initialize the SDK with your configuration
-const sdk = new DataiProjections({
-  network: 'mainnet', // Use 'testnet' for development/testing
-  apiKey: 'YOUR_API_KEY'
-});
+On the Datai Network, participants are held responsible to their commitments to ensure the integrity of the data. A commitment is a financially secured promise to deliver a projection by a certain date. When you commit to a projection, you are expected to deliver it by the agreed-upon date. If you fail to deliver the projection by the agreed-upon date, your stake will be moved as a grant towards the next developer who is willing to commit, and deliver a given projection.
 
-// Function to create a new projection
-async function createProjection() {
-  try {
-    const projectionConfig = {
-      name: 'MyFirstProjection',
-      description: 'A sample projection for data integration',
-      endpoints: ['https://api.example.com/data']
-    };
+For further details, please refer to our [Developer Documentation](https://datai.network/docs/developers/commitment/).
 
-    const result = await sdk.createProjection(projectionConfig);
-    console.log('Projection created successfully:', result);
-  } catch (error) {
-    console.error('Error creating projection:', error);
-  }
-}
+### Implementation
 
-createProjection();
-```
+This is the phase where the developer implements the previously committed projection. This is the longest phase, and to get all the details, please refer to our [Developer Documentation](https://datai.network/docs/developers/developing-your-first-projection/).
 
-For more detailed usage examples and advanced configurations, please refer to our [Developer Documentation](https://datai.network/docs/developers/developing-your-first-projection/).
+### Testing & Deployment
 
----
+Once the implementation is complete, the developer must carefully test it on their local machine before deploying the project to the public IPFS. It is crucial to pay attention to the quality of the data, as future bugs may be discovered by third parties, which could lead to penalties.
 
-## API Reference
+Please refer to our [Developer Documentation](https://datai.network/docs/developers/testing-and-deployment/) for further details.
 
-For complete details on available methods and configurations, please see our API documentation (coming soon). Here are a few common methods:
+### Earn rewards & maintenance
 
-- **`createProjection(config)`**: Creates a new projection with the specified configuration.
-- **`updateProjection(id, config)`**: Updates an existing projection.
-- **`deleteProjection(id)`**: Removes a projection from the network.
-- **`listProjections()`**: Retrieves a list of all active projections.
+Now is the time where you developer are rewarded for your great work. After each epoch, you can claim your rewards until your projection is expired (normally after 6 months).
+
+It's also time to pay attention, because if anyone finds a bug in your projection, a Dispute will be created and the bug will have to be addressed.
+
+Please refer to our [Developer Documentation](https://datai.network/docs/developers/projection-rewards/) for further details.
+
+### Claim Grant and withdraw deposit
+
+This is the final stage, where the developer can claim the Projection Grant (if it exists) and withdraw the initial deposit. Once the deposit is withdrawn, the developer is no longer responsible of the projection and the maintenance is over.
 
 ---
 
@@ -146,7 +142,7 @@ Join our community to discuss ideas, get help, and share your integrations:
 - **[Website](https://datai.network/)**
 - **[Telegram](http://t.me/Datai_network)**
 - **[Discord Channel](https://discord.gg/CKCgU3MegH)**
-- **[Twitter](https://x.com/datainetwork)**
+- **[X](https://x.com/datainetwork)**
 
 If you encounter any issues or have questions, please open an issue in this repository or reach out via our community channels.
 
@@ -159,4 +155,7 @@ This project is licensed under the [MIT License](LICENSE).
 ---
 
 Happy coding, and thank you for contributing to the Datai decentralized data network!
+
+```
+
 ```
