@@ -2,7 +2,7 @@
 
 > Easily integrate with the Datai decentralized data network
 
-[![Build Status](https://img.shields.io/travis/Datai-Network/datai-projections-sdk/master.svg)](https://travis-ci.org/Datai-Network/datai-projections-sdk)
+![Build Status](https://openaccessbucket.s3.us-east-1.amazonaws.com/datai-logo_sm.png)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
 The **Datai Projections SDK** empowers developers to rapidly build, manage, and integrate projections—specialized data integration modules—into the Datai decentralized data network. Whether you're enhancing network capabilities or building custom functionalities, this SDK provides the tools you need to get started quickly.
