@@ -31,28 +31,68 @@ The Datai Projections SDK is a modular library designed to simplify the process 
 
 For an in-depth guide on building your first projection, please see our [Developer Documentation](https://datai.network/docs/developers/developing-your-first-projection/).
 
+This document will first describe in general terms how the Datai Network works and who is participating in this ecosystem. Then the document will focus on Developers and on how to implement a projection.
+
 ---
 
-## What is a Projection?
+## Datai Network
+
+![Datai Network](img/datai-network.png)
+
+### What is Datai Network?
+
+Datai Network (DN) is a peer-to-peer network that indexes various blockchains and responds to external queries. It’s a distributed system where nodes collaborate to store essential information like node identities, roles, projection deployment details, active account states, and more. Each DN Node holds a part of this information, working together to maintain the network.
+
+### What are the different actors within the Datai Network?
+
+#### Developers
+
+Developers can contribute to the network by adding projections to increase data coverage and therefore earning $Datai tokens for your work
+
+#### Nodes
+
+Nodes can choose to be either Indexer or Gateway, which are the backbone of the network. Indexer nodes are responsible for indexing the projections submitted by developers, while Gateway nodes provide data to users by matching their requests to the relevant indexer nodes hosting the desired projections.
+
+#### Data Consumers
+
+Data consumers mainly consume data from the network, fueling the ecosystem by using Datai Tokens or Stablecoins to pay for requests as well as use our in-house apps and APIs.
+
+### Economics
+
+- Developers are staking DATAI tokens when a projection is registered. These tokens will be staked for 6 months.
+- Nodes are staking DATAI tokens when running either an Indexer or a Gateway.
+- Consumers are paying to consume data from the Datai Network, either in Stablecoins or in DATAI token.
+- After each epoch (1 day), balances are deducted from Consumers based on the amount of requests and rewards are distributed to Nodes and Developers in form of DATAI Token
+- Disputes may be created by anyone finding a bug, causing the Developer or the Disputer being slashed.
+- After 6 months, the Developer may withdraw the initial stake and potentially collect the Projection Grant.
+
+---
+
+## Projections
+
+This is the specific section for Developers who want to use this repository to start contributing to the Datai Network.
+
+### What is a Projection?
 
 A projection is a bundle of code implemented by a developer who wants to integrate a specific protocol into the Datai Network. The Datai engine compiles these projections and deploys them to IPFS for indexers to run on their nodes.
 
 This modular approach is key to expanding the network’s reach and utility.
 
----
-
-## Why should you implement a Projection?
+### Why should you implement a Projection?
 
 The network rewards developers for each projection they have deployed. Not only do developers receive rewards from data consumers, they are also eligible to claim staked grants on the projection.
 
----
-
-## What are the components of a projection?
+### What are the components of a projection?
 
 A projection has two main components which will contribute to calculate the active positions previously explained:
 
-- **Subgraph** → Indexes relevant events, such as a user staking tokens in a contract. The subgraph stores data about these positions, identifying users with open positions. This helps the next component focus only on these users rather than analyzing the entire user base.
-- **Watcher** → Periodically analyzes positions stored by the subgraph and calculates the active position balances.
+#### Subgraph
+
+Indexes relevant events, such as a user staking tokens in a contract. The subgraph stores data about these positions, identifying users with open positions. This helps the next component focus only on these users rather than analyzing the entire user base.
+
+#### Watcher
+
+Periodically analyzes positions stored by the subgraph and calculates the active position balances.
 
 ---
 
