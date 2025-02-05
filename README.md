@@ -57,7 +57,9 @@ Nodes can choose to be either Indexer or Gateway, which are the backbone of the 
 
 Data consumers mainly consume data from the network, fueling the ecosystem by using Datai Tokens or Stablecoins to pay for requests as well as use our in-house apps and APIs.
 
-### Economics
+### DATAI Token workflow
+
+![Datai Token workflow](img/datai-workflow.png)
 
 - Developers are staking DATAI tokens when a projection is registered. These tokens will be staked for 6 months.
 - Nodes are staking DATAI tokens when running either an Indexer or a Gateway.
@@ -118,7 +120,7 @@ npx create-datai-app
 
 ---
 
-## Workflow
+## Developer Workflow
 
 During the implementation process, you will have to go through the following phases:
 
