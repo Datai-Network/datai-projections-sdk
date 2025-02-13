@@ -53,6 +53,8 @@ Datai Network (DN) is a peer-to-peer network that indexes various blockchains an
 
 ### What are the different actors within the Datai Network?
 
+![Datai Actor Map](img/datai-actor-map.png)
+
 #### Developers
 
 Developers can contribute to the network by adding projections to increase data coverage and therefore earning $Datai tokens for your work
